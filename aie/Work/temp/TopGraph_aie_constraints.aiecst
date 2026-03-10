@@ -1,0 +1,51 @@
+{
+  "NodeConstraints": {
+    "topStencil.core.k_lap": {
+      "tile": {
+        "column": 7,
+        "row": 1,
+        "tile_type": "core"
+      },
+      "tile_src_info": {
+        "file": "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h",
+        "line": 40,
+        "column": 9
+      }
+    },
+    "topStencil.core.k_flux1": {
+      "tile": {
+        "column": 7,
+        "row": 2,
+        "tile_type": "core"
+      },
+      "tile_src_info": {
+        "file": "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h",
+        "line": 41,
+        "column": 9
+      }
+    },
+    "topStencil.core.k_flux2": {
+      "tile": {
+        "column": 7,
+        "row": 3,
+        "tile_type": "core"
+      },
+      "tile_src_info": {
+        "file": "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h",
+        "line": 42,
+        "column": 9
+      }
+    }
+  },
+  "GlobalConstraints": {
+    "areaGroup": {
+      "name": "partition_area_group_0",
+      "contain_routing": true,
+      "exclusive_routing": true,
+      "exclusive_placement": true,
+      "nodeGroup": ["topStencil.core.k_lap", "topStencil.core.k_flux1", "topStencil.core.k_flux2", "hdiff_in0", "hdiff_in1", "hdiff_in2", "hdiff_in3", "hdiff_in4", "hdiff_out0"],
+      "tileGroup": ["(0,0):(49,7)"],
+      "shimGroup": ["0:49"]
+    }
+  }
+}

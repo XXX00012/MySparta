@@ -1,0 +1,10 @@
+digraph N {
+ b458[color=orange,fontcolor=black,style=filled,label="b458\nACQ r4, #1, r7\ninp: R[4] R[7]"];  {rank=same; S0;  b458;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S0;  end;}
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1 [label="successor",shape=box];
+  S0 -> S1[style=invis,weight=9000];
+}

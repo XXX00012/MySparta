@@ -1,0 +1,186 @@
+sgraph: Fhdiff_flux2_m823
+n_nodes: 59
+ms_unfold_len: 72
+ms_RecMII: 60
+ms_ResMII: 23
+ms_MII: 60
+ms_II: 60
+ms_SC: 2
+ms_status: folded
+ms_cost: 600100
+ms_n_back_tracks: 0
+ms_tot_n_back_tracks: 0
+ms_n_nodes_scheduled:     59
+ms_tot_n_nodes_scheduled: 59
+ms_req_budgetRatio: 1
+ms_node_order: s76 #0
+ms_node_order: s73 #1
+ms_node_order: s72 #2
+ms_node_order: s60 #3
+ms_node_order: s74 #4
+ms_node_order: s439 #5
+ms_node_order: s438 #6
+ms_node_order: s433 #7
+ms_node_order: s432 #8
+ms_node_order: s68 #9
+ms_node_order: s71 #10
+ms_node_order: s70 #11
+ms_node_order: s425 #12
+ms_node_order: s424 #13
+ms_node_order: s66 #14
+ms_node_order: s65 #15
+ms_node_order: s67 #16
+ms_node_order: s437 #17
+ms_node_order: s436 #18
+ms_node_order: s61 #19
+ms_node_order: s64 #20
+ms_node_order: s63 #21
+ms_node_order: s59 #22
+ms_node_order: s58 #23
+ms_node_order: s55 #24
+ms_node_order: s428 #25
+ms_node_order: s430 #26
+ms_node_order: s57 #27
+ms_node_order: s56 #28
+ms_node_order: s53 #29
+ms_node_order: s52 #30
+ms_node_order: s421 #31
+ms_node_order: s420 #32
+ms_node_order: s429 #33
+ms_node_order: s54 #34
+ms_node_order: s288 #35
+ms_node_order: s49 #36
+ms_node_order: s51 #37
+ms_node_order: s50 #38
+ms_node_order: s48 #39
+ms_node_order: s47 #40
+ms_node_order: s46 #41
+ms_node_order: s423 #42
+ms_node_order: s422 #43
+ms_node_order: s62 #44
+ms_node_order: s427 #45
+ms_node_order: s426 #46
+ms_node_order: s69 #47
+ms_node_order: s233 #48
+ms_node_order: s338 #49
+ms_node_order: s75 #50
+ms_node_order: s441 #51
+ms_node_order: s440 #52
+ms_node_order: s77 #53
+ms_node_order: s78 #54
+ms_node_order: s435 #55
+ms_node_order: s434 #56
+ms_node_order: s431 #57
+ms_node_order: s79 #58
+ms_cstep s46: 0 0 0
+ms_cstep s47: 8 0 8
+ms_cstep s48: 9 0 9
+ms_cstep s49: 25 0 25
+ms_cstep s50: 11 0 11
+ms_cstep s51: 12 0 12
+ms_cstep s52: 20 0 20
+ms_cstep s53: 21 0 21
+ms_cstep s54: 26 0 26
+ms_cstep s55: 38 0 38
+ms_cstep s56: 23 0 23
+ms_cstep s57: 24 0 24
+ms_cstep s58: 32 0 32
+ms_cstep s59: 33 0 33
+ms_cstep s60: 2 1 62
+ms_cstep s61: 48 0 48
+ms_cstep s62: 7 1 67
+ms_cstep s63: 35 0 35
+ms_cstep s64: 36 0 36
+ms_cstep s65: 44 0 44
+ms_cstep s66: 45 0 45
+ms_cstep s67: 50 0 50
+ms_cstep s68: 58 0 58
+ms_cstep s69: 9 1 69
+ms_cstep s70: 47 0 47
+ms_cstep s71: 48 0 48
+ms_cstep s72: 56 0 56
+ms_cstep s73: 57 0 57
+ms_cstep s74: 3 1 63
+ms_cstep s75: 11 1 71
+ms_cstep s76: 59 0 59
+ms_cstep s77: 13 1 73
+ms_cstep s78: 14 1 74
+ms_cstep s79: 20 1 80
+ms_cstep s420: 38 0 38
+ms_cstep s421: 39 0 39
+ms_cstep s422: 59 0 59
+ms_cstep s423: 0 1 60
+ms_cstep s424: 57 0 57
+ms_cstep s425: 58 0 58
+ms_cstep s426: 2 1 62
+ms_cstep s427: 1 1 61
+ms_cstep s428: 41 0 41
+ms_cstep s429: 40 0 40
+ms_cstep s430: 46 0 46
+ms_cstep s431: 45 0 45
+ms_cstep s432: 52 0 52
+ms_cstep s433: 53 0 53
+ms_cstep s434: 17 0 17
+ms_cstep s435: 18 0 18
+ms_cstep s436: 42 0 42
+ms_cstep s437: 43 0 43
+ms_cstep s438: 54 0 54
+ms_cstep s439: 55 0 55
+ms_cstep s440: 5 1 65
+ms_cstep s441: 7 1 67
+ms_cstep s233: 9 1 69
+ms_cstep s288: 25 0 25
+ms_cstep s338: 6 1 66
+---------- block m823: modulo scheduled: schedule S :
+    length: 60
+    word length: 960
+    word cost: 9600
+    side-effect writes: 7
+    instr_prior: 1069436
+    bundles per cstep:
+        0:	b46	--> p5, 	b423	--> p11901	 DELAYED_WRITE = 1
+        1:	b427	--> p11912	 DELAYED_WRITE = 1
+        2:	b60	--> p5858, 	b426	--> p11908	 DELAYED_WRITE = 1
+        3:	b74	--> p11708	 DELAYED_WRITE = 1
+        5:	b440	--> p11948	 DELAYED_WRITE = 1
+        6:	b338	--> p11965	 DELAYED_WRITE = 1
+        7:	b62	--> p8775, 	b441	--> p11952	 DELAYED_WRITE = 1
+        8:	b47	--> p7	 DELAYED_WRITE = 1
+        9:	b48	--> p9, 	b69	--> p11700, 	b233	--> p11962	 DELAYED_WRITE = 1
+        11:	b50	--> p2927, 	b75	--> p11709	 DELAYED_WRITE = 1
+        12:	b51	--> p2928	 DELAYED_WRITE = 1
+        13:	b77	--> p11711	 DELAYED_WRITE = 1
+        14:	b78	--> p11751	 DELAYED_WRITE = 0
+        17:	b434	--> p11930	 DELAYED_WRITE = 0
+        18:	b435	--> p11934	 DELAYED_WRITE = 0
+        20:	b52	--> p2930, 	b79	--> p11761	 DELAYED_WRITE = 1
+        21:	b53	--> p2932	 DELAYED_WRITE = 1
+        23:	b56	--> p5851	 DELAYED_WRITE = 1
+        24:	b57	--> p5852	 DELAYED_WRITE = 1
+        25:	b49	--> p11, 	b288	--> p11963	 DELAYED_WRITE = 1
+        26:	b54	--> p2934	 DELAYED_WRITE = 0
+        32:	b58	--> p5854	 DELAYED_WRITE = 1
+        33:	b59	--> p5856	 DELAYED_WRITE = 1
+        35:	b63	--> p8776	 DELAYED_WRITE = 1
+        36:	b64	--> p8777	 DELAYED_WRITE = 1
+        38:	b55	--> p2935, 	b420	--> p11894	 DELAYED_WRITE = 1
+        39:	b421	--> p11896	 DELAYED_WRITE = 0
+        40:	b429	--> p11918	 DELAYED_WRITE = 1
+        41:	b428	--> p11914	 DELAYED_WRITE = 1
+        42:	b436	--> p11936	 DELAYED_WRITE = 1
+        43:	b437	--> p11940	 DELAYED_WRITE = 1
+        44:	b65	--> p8779	 DELAYED_WRITE = 1
+        45:	b66	--> p8781, 	b431	--> p11922	 DELAYED_WRITE = 1
+        46:	b430	--> p11920	 DELAYED_WRITE = 1
+        47:	b70	--> p11701	 DELAYED_WRITE = 1
+        48:	b61	--> p5859, 	b71	--> p11702	 DELAYED_WRITE = 1
+        50:	b67	--> p8783	 DELAYED_WRITE = 0
+        52:	b432	--> p11924	 DELAYED_WRITE = 1
+        53:	b433	--> p11928	 DELAYED_WRITE = 1
+        54:	b438	--> p11942	 DELAYED_WRITE = 1
+        55:	b439	--> p11946	 DELAYED_WRITE = 1
+        56:	b72	--> p11704	 DELAYED_WRITE = 1
+        57:	b73	--> p11706, 	b424	--> p11904	 DELAYED_WRITE = 1
+        58:	b68	--> p8784, 	b425	--> p11906	 DELAYED_WRITE = 1
+        59:	b76	--> p11710, 	b422	--> p11898	 DELAYED_WRITE = 1
+    

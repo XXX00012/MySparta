@@ -1,0 +1,37 @@
+{
+    "SyncBufferAddress": [
+        {
+            "QualifiedGraphName": "topStencil.core",
+            "Column": 7,
+            "Row": 1,
+            "LocalAddress": "0x38000",
+            "GlobalAddress": {
+                "Column": 8,
+                "Row": 1,
+                "Address": "0x0"
+            }
+        },
+        {
+            "QualifiedGraphName": "topStencil.core",
+            "Column": 7,
+            "Row": 2,
+            "LocalAddress": "0x217e0",
+            "GlobalAddress": {
+                "Column": 7,
+                "Row": 1,
+                "Address": "0x17e0"
+            }
+        },
+        {
+            "QualifiedGraphName": "topStencil.core",
+            "Column": 7,
+            "Row": 3,
+            "LocalAddress": "0x38000",
+            "GlobalAddress": {
+                "Column": 8,
+                "Row": 3,
+                "Address": "0x0"
+            }
+        }
+    ]
+}

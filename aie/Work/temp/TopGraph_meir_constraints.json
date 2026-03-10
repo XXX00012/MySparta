@@ -1,0 +1,40 @@
+{
+  "NodeConstraints": {
+    "topStencil.core.k_lap": {
+      "tile": {
+        "column": 7,
+        "row": 1,
+        "tile_type": "core"
+      },
+      "tile_src_info": {
+        "file": "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h",
+        "line": 40,
+        "column": 9
+      }
+    },
+    "topStencil.core.k_flux1": {
+      "tile": {
+        "column": 7,
+        "row": 2,
+        "tile_type": "core"
+      },
+      "tile_src_info": {
+        "file": "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h",
+        "line": 41,
+        "column": 9
+      }
+    },
+    "topStencil.core.k_flux2": {
+      "tile": {
+        "column": 7,
+        "row": 3,
+        "tile_type": "core"
+      },
+      "tile_src_info": {
+        "file": "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h",
+        "line": 42,
+        "column": 9
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+DMA Analysis Report 
+
+DMA Report: S2MM
+portinst: i0_pi3 idx[3] datatype:wndo<int32> mem in blocksize:1024 max_blocksize:1024 bw_utlization = 1 (variable name:  k_lap.in[3])
+ MG(7,2) : channel=0, startBD=0, lockID=0, name=buf5
+ MG(7,2) : channel=0, startBD=1, lockID=1, name=buf5d
+portinst: i0_pi2 idx[2] datatype:wndo<int32> mem in blocksize:1024 max_blocksize:1024 bw_utlization = 1 (variable name:  k_lap.in[2])
+ MG(8,1) : channel=0, startBD=0, lockID=0, name=buf3
+ MG(8,1) : channel=0, startBD=1, lockID=1, name=buf3d
+portinst: i1_pi0 idx[0] datatype:wndo<int32> mem in blocksize:1024 max_blocksize:1024 bw_utlization = 1 (variable name:  k_flux1.in[0])
+ MG(6,2) : channel=0, startBD=0, lockID=0, name=buf2
+ MG(6,2) : channel=0, startBD=1, lockID=1, name=buf2d
+portinst: i0_pi4 idx[4] datatype:wndo<int32> mem in blocksize:1024 max_blocksize:1024 bw_utlization = 1 (variable name:  k_lap.in[4])
+ MG(7,2) : channel=1, startBD=2, lockID=2, name=buf7
+ MG(7,2) : channel=1, startBD=3, lockID=3, name=buf7d
+portinst: i1_pi1 idx[1] datatype:wndo<int32> mem in blocksize:1024 max_blocksize:1024 bw_utlization = 1 (variable name:  k_flux1.in[1])
+ MG(7,3) : channel=0, startBD=0, lockID=0, name=buf4
+ MG(7,3) : channel=0, startBD=1, lockID=1, name=buf4d
+portinst: i1_pi2 idx[2] datatype:wndo<int32> mem in blocksize:1024 max_blocksize:1024 bw_utlization = 1 (variable name:  k_flux1.in[2])
+ MG(6,2) : channel=1, startBD=2, lockID=2, name=buf6
+ MG(6,2) : channel=1, startBD=3, lockID=3, name=buf6d
+portinst: i0_pi0 idx[0] datatype:wndo<int32> mem in blocksize:1024 max_blocksize:1024 bw_utlization = 1 (variable name:  k_lap.in[0])
+ MG(7,0) : channel=0, startBD=0, lockID=0, name=buf0
+ MG(7,0) : channel=0, startBD=1, lockID=1, name=buf0d
+portinst: i0_pi1 idx[1] datatype:wndo<int32> mem in blocksize:1024 max_blocksize:1024 bw_utlization = 1 (variable name:  k_lap.in[1])
+ MG(7,0) : channel=1, startBD=2, lockID=2, name=buf1
+ MG(7,0) : channel=1, startBD=3, lockID=3, name=buf1d
+
+DMA Report: MM2S
+portinst: i2_po0 idx[5] datatype:wndo<int32> mem out blocksize:1024 max_blocksize:1024 bw_utlization = 1 (variable name:  k_flux2.out[0])
+ MG(7,4) : channel=0, startBD=0, lockID=0, name=buf17
+ MG(7,4) : channel=0, startBD=1, lockID=1, name=buf17d
+

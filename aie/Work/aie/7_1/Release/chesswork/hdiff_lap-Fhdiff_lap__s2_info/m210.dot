@@ -1,0 +1,33 @@
+digraph N {
+ b49[color=orange,fontcolor=black,style=filled,label="b49\nRET lr\ninp: LR[0]"];  {rank=same; S2;  b49;}
+ b491[color=orange,fontcolor=black,style=filled,label="b491\nLDA.SPIL p6, [sp, #-4]\ninp: SP[0]\nout: P[6]"];  {rank=same; S0;  b491;}
+ b48[color=orange,fontcolor=black,style=filled,label="b48\nPADDA [sp], m3\ninp: SP[0] SP[0]\nout: SP[0]"];  {rank=same; S6;  b48;}
+ b514[color=orange,fontcolor=black,style=filled,label="b514\nMOV.s12 m3, #-192"];  {rank=same; S5;  b514;}
+ b475[color=orange,fontcolor=black,style=filled,label="b475\nMOV r4, ch6\ninp: CH[6]\nout: RS[4]"];  {rank=same; S5;  b475;}
+ b483[color=orange,fontcolor=black,style=filled,label="b483\nMOV p7, ch4\ninp: CH[4]\nout: P[7]"];  {rank=same; S6;  b483;}
+ start [color=blue,fontcolor=white,style=filled,label="start"];  {rank=same; S0;  start;}
+ end [color=blue,fontcolor=white,style=filled,label="end"];  {rank=same; S7;  end;}
+   b491 -> b48 [color=maroon,fontcolor=maroon,label="len=1\nSP[0]",weight=1000];
+   b491 -> end [color=maroon,fontcolor=maroon,penwidth=3,label="min len=7",weight=1000];
+   b48 -> end [color=maroon,fontcolor=maroon,penwidth=3,label="min len=1",weight=1000];
+   b514 -> b48 [color=black,fontcolor=black,penwidth=3,label="len=1\nM[3]",weight=1000];
+   b475 -> end [color=maroon,fontcolor=maroon,label="min len=1",weight=1000];
+   b483 -> end [color=maroon,fontcolor=maroon,penwidth=3,label="min len=1",weight=1000];
+  Sm1 [label="predecessor",shape=box];
+  S0 [label="step 0",shape=box];
+  Sm1 -> S0[style=invis,weight=9000];
+  S1 [label="step 1",shape=box];
+  S0 -> S1[style=invis,weight=9000];
+  S2 [label="step 2",shape=box];
+  S1 -> S2[style=invis,weight=9000];
+  S3_S4 [label="steps [3,4]",shape=box];
+  S2 -> S3_S4[style=invis,weight=9000];
+  S5 [label="step 5",shape=box];
+  S3_S4 -> S5[style=invis,weight=9000];
+  S6 [label="step 6",shape=box];
+  S5 -> S6[style=invis,weight=9000];
+  S7 [label="step 7",shape=box];
+  S6 -> S7[style=invis,weight=9000];
+  S8 [label="successor",shape=box];
+  S7 -> S8[style=invis,weight=9000];
+}

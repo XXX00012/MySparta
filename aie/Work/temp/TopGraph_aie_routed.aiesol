@@ -1,0 +1,6473 @@
+{
+    "Version": 0.0,
+    "Non-Netlist Instances": [
+        "buf0",
+        "buf1",
+        "buf2",
+        "buf3",
+        "buf4",
+        "buf5",
+        "buf6",
+        "buf7",
+        "buf8",
+        "buf9",
+        "buf10",
+        "buf11",
+        "buf12",
+        "buf13",
+        "buf14",
+        "buf15",
+        "buf16",
+        "buf17",
+        "sysmem18",
+        "sysmem19",
+        "sysmem20",
+        "buf21",
+        "buf22",
+        "buf23",
+        "buf24",
+        "buf25",
+        "buf26",
+        "buf27",
+        "buf28",
+        "buf29",
+        "buf30",
+        "buf31",
+        "buf32",
+        "buf33",
+        "buf34",
+        "buf35",
+        "buf36",
+        "buf37",
+        "buf38",
+        "PT0",
+        "PT1",
+        "PT2",
+        "net0",
+        "net1",
+        "net1_bcast1",
+        "net3",
+        "net3_bcast1",
+        "net5",
+        "net5_bcast1",
+        "net7",
+        "net8",
+        "net9",
+        "net10",
+        "net11",
+        "net12",
+        "net13",
+        "net14",
+        "net15",
+        "net16",
+        "net17",
+        "D_net0",
+        "D_net1",
+        "D_net1_bcast1",
+        "D_net3",
+        "D_net3_bcast1",
+        "D_net5",
+        "D_net5_bcast1",
+        "D_net7",
+        "D_net8",
+        "D_net9",
+        "D_net10",
+        "D_net11",
+        "D_net12",
+        "D_net13",
+        "D_net14",
+        "D_net15",
+        "D_net16",
+        "D_net17",
+        "unconstraint_fifo0",
+        "unconstraint_fifo1",
+        "unconstraint_fifo2",
+        "unconstraint_fifo3",
+        "unconstraint_fifo4",
+        "unconstraint_fifo5",
+        "unconstraint_fifo6",
+        "unconstraint_fifo7",
+        "unconstraint_fifo8",
+        "unconstraint_fifo9",
+        "unconstraint_fifo10",
+        "unconstraint_fifo11",
+        "unconstraint_fifo12",
+        "unconstraint_fifo13",
+        "unconstraint_fifo14",
+        "unconstraint_fifo15",
+        "unconstraint_fifo16",
+        "unconstraint_fifo17"
+    ],
+    "Non-Netlist Instance Placement": [
+        {
+            "Name": "buf0",
+            "Site": "AIE_MEMGRP_X7Y0",
+            "Bel": "BANK1"
+        },
+        {
+            "Name": "buf1",
+            "Site": "AIE_MEMGRP_X7Y0",
+            "Bel": "BANK2"
+        },
+        {
+            "Name": "buf2",
+            "Site": "AIE_MEMGRP_X6Y2",
+            "Bel": "BANK0"
+        },
+        {
+            "Name": "buf3",
+            "Site": "AIE_MEMGRP_X8Y1",
+            "Bel": "BANK2"
+        },
+        {
+            "Name": "buf4",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "BANK0"
+        },
+        {
+            "Name": "buf5",
+            "Site": "AIE_MEMGRP_X7Y2",
+            "Bel": "BANK3"
+        },
+        {
+            "Name": "buf6",
+            "Site": "AIE_MEMGRP_X6Y2",
+            "Bel": "BANK2"
+        },
+        {
+            "Name": "buf7",
+            "Site": "AIE_MEMGRP_X7Y2",
+            "Bel": "BANK0"
+        },
+        {
+            "Name": "buf8",
+            "Site": "AIE_MEMGRP_X7Y2",
+            "Bel": "BANK2"
+        },
+        {
+            "Name": "buf9",
+            "Site": "AIE_MEMGRP_X7Y1",
+            "Bel": "BANK2"
+        },
+        {
+            "Name": "buf10",
+            "Site": "AIE_MEMGRP_X7Y2",
+            "Bel": "BANK0"
+        },
+        {
+            "Name": "buf11",
+            "Site": "AIE_MEMGRP_X7Y2",
+            "Bel": "BANK0"
+        },
+        {
+            "Name": "buf12",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "BANK1"
+        },
+        {
+            "Name": "buf13",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "BANK2"
+        },
+        {
+            "Name": "buf14",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "BANK3"
+        },
+        {
+            "Name": "buf15",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "BANK0"
+        },
+        {
+            "Name": "buf16",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "BANK3"
+        },
+        {
+            "Name": "buf17",
+            "Site": "AIE_MEMGRP_X7Y4",
+            "Bel": "BANK0"
+        },
+        {
+            "Name": "sysmem18",
+            "Site": "AIE_MEMGRP_X8Y1",
+            "Bel": "BANK0"
+        },
+        {
+            "Name": "sysmem19",
+            "Site": "AIE_MEMGRP_X7Y1",
+            "Bel": "BANK0"
+        },
+        {
+            "Name": "sysmem20",
+            "Site": "AIE_MEMGRP_X8Y3",
+            "Bel": "BANK0"
+        },
+        {
+            "Name": "buf21",
+            "Site": "AIE_MEMGRP_X7Y0",
+            "Bel": "BANK3"
+        },
+        {
+            "Name": "buf22",
+            "Site": "AIE_MEMGRP_X7Y0",
+            "Bel": "BANK0"
+        },
+        {
+            "Name": "buf23",
+            "Site": "AIE_MEMGRP_X6Y2",
+            "Bel": "BANK1"
+        },
+        {
+            "Name": "buf24",
+            "Site": "AIE_MEMGRP_X8Y1",
+            "Bel": "BANK1"
+        },
+        {
+            "Name": "buf25",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "BANK1"
+        },
+        {
+            "Name": "buf26",
+            "Site": "AIE_MEMGRP_X7Y2",
+            "Bel": "BANK1"
+        },
+        {
+            "Name": "buf27",
+            "Site": "AIE_MEMGRP_X6Y2",
+            "Bel": "BANK3"
+        },
+        {
+            "Name": "buf28",
+            "Site": "AIE_MEMGRP_X7Y2",
+            "Bel": "BANK2"
+        },
+        {
+            "Name": "buf29",
+            "Site": "AIE_MEMGRP_X7Y2",
+            "Bel": "BANK1"
+        },
+        {
+            "Name": "buf30",
+            "Site": "AIE_MEMGRP_X7Y1",
+            "Bel": "BANK1"
+        },
+        {
+            "Name": "buf31",
+            "Site": "AIE_MEMGRP_X7Y2",
+            "Bel": "BANK3"
+        },
+        {
+            "Name": "buf32",
+            "Site": "AIE_MEMGRP_X7Y1",
+            "Bel": "BANK3"
+        },
+        {
+            "Name": "buf33",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "BANK3"
+        },
+        {
+            "Name": "buf34",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "BANK1"
+        },
+        {
+            "Name": "buf35",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "BANK0"
+        },
+        {
+            "Name": "buf36",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "BANK2"
+        },
+        {
+            "Name": "buf37",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "BANK2"
+        },
+        {
+            "Name": "buf38",
+            "Site": "AIE_MEMGRP_X7Y4",
+            "Bel": "BANK1"
+        },
+        {
+            "Name": "PT0",
+            "Site": "AIE_CORE_X7Y1",
+            "Bel": "CORE"
+        },
+        {
+            "Name": "PT1",
+            "Site": "AIE_CORE_X7Y2",
+            "Bel": "CORE"
+        },
+        {
+            "Name": "PT2",
+            "Site": "AIE_CORE_X7Y3",
+            "Bel": "CORE"
+        }
+    ],
+    "Instance Placement": [
+        {
+            "Name": "hdiff_in0",
+            "Site": "AIE_PL_X6Y0",
+            "Bel": "AIE_PL_S_AXIS_2"
+        },
+        {
+            "Name": "hdiff_in1",
+            "Site": "AIE_PL_X6Y0",
+            "Bel": "AIE_PL_S_AXIS_0"
+        },
+        {
+            "Name": "hdiff_in2",
+            "Site": "AIE_PL_X6Y0",
+            "Bel": "AIE_PL_S_AXIS_6"
+        },
+        {
+            "Name": "hdiff_in3",
+            "Site": "AIE_PL_X6Y0",
+            "Bel": "AIE_PL_S_AXIS_1"
+        },
+        {
+            "Name": "hdiff_in4",
+            "Site": "AIE_PL_X6Y0",
+            "Bel": "AIE_PL_S_AXIS_4"
+        },
+        {
+            "Name": "hdiff_out0",
+            "Site": "AIE_PL_X6Y0",
+            "Bel": "AIE_PL_M_AXIS_0"
+        },
+        {
+            "Name": "topStencil.core.k_flux1",
+            "Site": "AIE_CORE_X7Y2",
+            "Bel": "CORE"
+        },
+        {
+            "Name": "topStencil.core.k_flux2",
+            "Site": "AIE_CORE_X7Y3",
+            "Bel": "CORE"
+        },
+        {
+            "Name": "topStencil.core.k_lap",
+            "Site": "AIE_CORE_X7Y1",
+            "Bel": "CORE"
+        }
+    ],
+    "InstTerm Placement": [
+        {
+            "InstName": "hdiff_in0",
+            "InstTermName": "po0",
+            "Site": "AIE_PL_X6Y0",
+            "Bel": "AIE_PL_S_AXIS_2",
+            "BelPin": "TO_AIE"
+        },
+        {
+            "InstName": "hdiff_in1",
+            "InstTermName": "po0",
+            "Site": "AIE_PL_X6Y0",
+            "Bel": "AIE_PL_S_AXIS_0",
+            "BelPin": "TO_AIE"
+        },
+        {
+            "InstName": "hdiff_in2",
+            "InstTermName": "po0",
+            "Site": "AIE_PL_X6Y0",
+            "Bel": "AIE_PL_S_AXIS_6",
+            "BelPin": "TO_AIE"
+        },
+        {
+            "InstName": "hdiff_in3",
+            "InstTermName": "po0",
+            "Site": "AIE_PL_X6Y0",
+            "Bel": "AIE_PL_S_AXIS_1",
+            "BelPin": "TO_AIE"
+        },
+        {
+            "InstName": "hdiff_in4",
+            "InstTermName": "po0",
+            "Site": "AIE_PL_X6Y0",
+            "Bel": "AIE_PL_S_AXIS_4",
+            "BelPin": "TO_AIE"
+        },
+        {
+            "InstName": "hdiff_out0",
+            "InstTermName": "pi0",
+            "Site": "AIE_PL_X6Y0",
+            "Bel": "AIE_PL_M_AXIS_0",
+            "BelPin": "FROM_AIE"
+        },
+        {
+            "InstName": "topStencil.core.k_flux1",
+            "InstTermName": "pi0",
+            "Site": "AIE_MEMGRP_X6Y2",
+            "Bel": "DMA",
+            "BelPin": "S_DMA_CH0"
+        },
+        {
+            "InstName": "topStencil.core.k_flux1",
+            "InstTermName": "pi1",
+            "Site": "AIE_MEMGRP_X7Y3",
+            "Bel": "DMA",
+            "BelPin": "S_DMA_CH0"
+        },
+        {
+            "InstName": "topStencil.core.k_flux1",
+            "InstTermName": "pi2",
+            "Site": "AIE_MEMGRP_X6Y2",
+            "Bel": "DMA",
+            "BelPin": "S_DMA_CH1"
+        },
+        {
+            "InstName": "topStencil.core.k_flux2",
+            "InstTermName": "po0",
+            "Site": "AIE_MEMGRP_X7Y4",
+            "Bel": "DMA",
+            "BelPin": "M_DMA_CH0"
+        },
+        {
+            "InstName": "topStencil.core.k_lap",
+            "InstTermName": "pi0",
+            "Site": "AIE_MEMGRP_X7Y0",
+            "Bel": "DMA",
+            "BelPin": "S_DMA_CH0"
+        },
+        {
+            "InstName": "topStencil.core.k_lap",
+            "InstTermName": "pi1",
+            "Site": "AIE_MEMGRP_X7Y0",
+            "Bel": "DMA",
+            "BelPin": "S_DMA_CH1"
+        },
+        {
+            "InstName": "topStencil.core.k_lap",
+            "InstTermName": "pi2",
+            "Site": "AIE_MEMGRP_X8Y1",
+            "Bel": "DMA",
+            "BelPin": "S_DMA_CH0"
+        },
+        {
+            "InstName": "topStencil.core.k_lap",
+            "InstTermName": "pi3",
+            "Site": "AIE_MEMGRP_X7Y2",
+            "Bel": "DMA",
+            "BelPin": "S_DMA_CH0"
+        },
+        {
+            "InstName": "topStencil.core.k_lap",
+            "InstTermName": "pi4",
+            "Site": "AIE_MEMGRP_X7Y2",
+            "Bel": "DMA",
+            "BelPin": "S_DMA_CH1"
+        }
+    ],
+    "DMAFIFOs Placement": [],
+    "Non-Netlist Instance Links": [
+        {
+            "buf0": [
+                "hdiff_in0/po0",
+                "topStencil.core.k_lap/pi0"
+            ]
+        },
+        {
+            "buf1": [
+                "hdiff_in1/po0",
+                "topStencil.core.k_lap/pi1"
+            ]
+        },
+        {
+            "buf2": [
+                "hdiff_in1/po0",
+                "topStencil.core.k_flux1/pi0"
+            ]
+        },
+        {
+            "buf3": [
+                "hdiff_in2/po0",
+                "topStencil.core.k_lap/pi2"
+            ]
+        },
+        {
+            "buf4": [
+                "hdiff_in2/po0",
+                "topStencil.core.k_flux1/pi1"
+            ]
+        },
+        {
+            "buf5": [
+                "hdiff_in3/po0",
+                "topStencil.core.k_lap/pi3"
+            ]
+        },
+        {
+            "buf6": [
+                "hdiff_in3/po0",
+                "topStencil.core.k_flux1/pi2"
+            ]
+        },
+        {
+            "buf7": [
+                "hdiff_in4/po0",
+                "topStencil.core.k_lap/pi4"
+            ]
+        },
+        {
+            "buf8": [
+                "topStencil.core.k_lap/po0",
+                "topStencil.core.k_flux1/pi3"
+            ]
+        },
+        {
+            "buf9": [
+                "topStencil.core.k_lap/po1",
+                "topStencil.core.k_flux1/pi4"
+            ]
+        },
+        {
+            "buf10": [
+                "topStencil.core.k_lap/po2",
+                "topStencil.core.k_flux1/pi5"
+            ]
+        },
+        {
+            "buf11": [
+                "topStencil.core.k_lap/po3",
+                "topStencil.core.k_flux1/pi6"
+            ]
+        },
+        {
+            "buf12": [
+                "topStencil.core.k_flux1/po0",
+                "topStencil.core.k_flux2/pi0"
+            ]
+        },
+        {
+            "buf13": [
+                "topStencil.core.k_flux1/po1",
+                "topStencil.core.k_flux2/pi1"
+            ]
+        },
+        {
+            "buf14": [
+                "topStencil.core.k_flux1/po2",
+                "topStencil.core.k_flux2/pi2"
+            ]
+        },
+        {
+            "buf15": [
+                "topStencil.core.k_flux1/po3",
+                "topStencil.core.k_flux2/pi3"
+            ]
+        },
+        {
+            "buf16": [
+                "topStencil.core.k_flux1/po4",
+                "topStencil.core.k_flux2/pi4"
+            ]
+        },
+        {
+            "buf17": [
+                "topStencil.core.k_flux2/po0",
+                "hdiff_out0/pi0"
+            ]
+        },
+        {
+            "buf21": [
+                "hdiff_in0/po0",
+                "topStencil.core.k_lap/pi0"
+            ]
+        },
+        {
+            "buf22": [
+                "hdiff_in1/po0",
+                "topStencil.core.k_lap/pi1"
+            ]
+        },
+        {
+            "buf23": [
+                "hdiff_in1/po0",
+                "topStencil.core.k_flux1/pi0"
+            ]
+        },
+        {
+            "buf24": [
+                "hdiff_in2/po0",
+                "topStencil.core.k_lap/pi2"
+            ]
+        },
+        {
+            "buf25": [
+                "hdiff_in2/po0",
+                "topStencil.core.k_flux1/pi1"
+            ]
+        },
+        {
+            "buf26": [
+                "hdiff_in3/po0",
+                "topStencil.core.k_lap/pi3"
+            ]
+        },
+        {
+            "buf27": [
+                "hdiff_in3/po0",
+                "topStencil.core.k_flux1/pi2"
+            ]
+        },
+        {
+            "buf28": [
+                "hdiff_in4/po0",
+                "topStencil.core.k_lap/pi4"
+            ]
+        },
+        {
+            "buf29": [
+                "topStencil.core.k_lap/po0",
+                "topStencil.core.k_flux1/pi3"
+            ]
+        },
+        {
+            "buf30": [
+                "topStencil.core.k_lap/po1",
+                "topStencil.core.k_flux1/pi4"
+            ]
+        },
+        {
+            "buf31": [
+                "topStencil.core.k_lap/po2",
+                "topStencil.core.k_flux1/pi5"
+            ]
+        },
+        {
+            "buf32": [
+                "topStencil.core.k_lap/po3",
+                "topStencil.core.k_flux1/pi6"
+            ]
+        },
+        {
+            "buf33": [
+                "topStencil.core.k_flux1/po0",
+                "topStencil.core.k_flux2/pi0"
+            ]
+        },
+        {
+            "buf34": [
+                "topStencil.core.k_flux1/po1",
+                "topStencil.core.k_flux2/pi1"
+            ]
+        },
+        {
+            "buf35": [
+                "topStencil.core.k_flux1/po2",
+                "topStencil.core.k_flux2/pi2"
+            ]
+        },
+        {
+            "buf36": [
+                "topStencil.core.k_flux1/po3",
+                "topStencil.core.k_flux2/pi3"
+            ]
+        },
+        {
+            "buf37": [
+                "topStencil.core.k_flux1/po4",
+                "topStencil.core.k_flux2/pi4"
+            ]
+        },
+        {
+            "buf38": [
+                "topStencil.core.k_flux2/po0",
+                "hdiff_out0/pi0"
+            ]
+        },
+        {
+            "PT0": [
+                "topStencil.core.k_lap"
+            ]
+        },
+        {
+            "PT1": [
+                "topStencil.core.k_flux1"
+            ]
+        },
+        {
+            "PT2": [
+                "topStencil.core.k_flux2"
+            ]
+        },
+        {
+            "unconstraint_fifo0": [
+                "topStencil.core.k_lap/pi0"
+            ]
+        },
+        {
+            "unconstraint_fifo1": [
+                "topStencil.core.k_lap/pi1"
+            ]
+        },
+        {
+            "unconstraint_fifo2": [
+                "topStencil.core.k_flux1/pi0"
+            ]
+        },
+        {
+            "unconstraint_fifo3": [
+                "topStencil.core.k_lap/pi2"
+            ]
+        },
+        {
+            "unconstraint_fifo4": [
+                "topStencil.core.k_flux1/pi1"
+            ]
+        },
+        {
+            "unconstraint_fifo5": [
+                "topStencil.core.k_lap/pi3"
+            ]
+        },
+        {
+            "unconstraint_fifo6": [
+                "topStencil.core.k_flux1/pi2"
+            ]
+        },
+        {
+            "unconstraint_fifo7": [
+                "topStencil.core.k_lap/pi4"
+            ]
+        },
+        {
+            "unconstraint_fifo8": [
+                "topStencil.core.k_flux1/pi3"
+            ]
+        },
+        {
+            "unconstraint_fifo9": [
+                "topStencil.core.k_flux1/pi4"
+            ]
+        },
+        {
+            "unconstraint_fifo10": [
+                "topStencil.core.k_flux1/pi5"
+            ]
+        },
+        {
+            "unconstraint_fifo11": [
+                "topStencil.core.k_flux1/pi6"
+            ]
+        },
+        {
+            "unconstraint_fifo12": [
+                "topStencil.core.k_flux2/pi0"
+            ]
+        },
+        {
+            "unconstraint_fifo13": [
+                "topStencil.core.k_flux2/pi1"
+            ]
+        },
+        {
+            "unconstraint_fifo14": [
+                "topStencil.core.k_flux2/pi2"
+            ]
+        },
+        {
+            "unconstraint_fifo15": [
+                "topStencil.core.k_flux2/pi3"
+            ]
+        },
+        {
+            "unconstraint_fifo16": [
+                "topStencil.core.k_flux2/pi4"
+            ]
+        },
+        {
+            "unconstraint_fifo17": [
+                "hdiff_out0/pi0"
+            ]
+        }
+    ],
+    "Non-Netlist Instance Attrs": [
+        {
+            "Name": "buf0",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in0/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in0"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_lap/pi0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf21"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf0"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf0"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf1",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in1/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_lap/pi1"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf22"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf1"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf1"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf2",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in1/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf23"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf2"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf2"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 6"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf3",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in2/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_lap/pi2"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf24"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf3"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf3"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 8"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf4",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in2/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi1"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf25"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf4"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf4"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 4096"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf5",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in3/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in3"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_lap/pi3"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf26"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf5"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf5"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf6",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in3/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in3"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi2"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf27"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf6"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf6"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 6"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf7",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in4/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in4"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_lap/pi4"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf28"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf7"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf7"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf8",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_lap/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi3"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf29"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf8"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf8"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 6144"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf9",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_lap/po1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi4"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf30"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf9"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf9"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf10",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_lap/po2"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi5"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf31"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf10"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf10"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf11",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_lap/po3"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi6"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf32"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf11"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf11"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 7168"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf12",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_flux1/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux2/pi0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf33"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf12"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf12"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 5120"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf13",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_flux1/po1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux2/pi1"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf34"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf13"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf13"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf14",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_flux1/po2"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux2/pi2"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf35"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf14"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf14"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf15",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_flux1/po3"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux2/pi3"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf36"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf15"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf15"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf16",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_flux1/po4"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux2/pi4"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf37"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf16"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf16"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 6144"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "buf17",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_flux2/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING hdiff_out0/pi0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING hdiff_out0"
+                },
+                {
+                    "Key": "IsPing",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "pongBufferName",
+                    "Val": "STRING buf38"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf17"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf17"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 4"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "IsSelector",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "sysmem18",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_partition_reserved_memory",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "stackSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "heapSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING sysmem18"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2080"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2080"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 8"
+                },
+                {
+                    "Key": "accessRow",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "accessCol",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "sysmem19",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_partition_reserved_memory",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "stackSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "heapSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING sysmem19"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2080"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2080"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 6112"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                },
+                {
+                    "Key": "accessRow",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "accessCol",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "sysmem20",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_partition_reserved_memory",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "stackSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "heapSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING sysmem20"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2080"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2080"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 8"
+                },
+                {
+                    "Key": "accessRow",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "accessCol",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf21",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in0/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in0"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_lap/pi0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf0d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf21"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf22",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in1/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_lap/pi1"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf1d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf22"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf23",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in1/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf2d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf23"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 6"
+                }
+            ]
+        },
+        {
+            "Name": "buf24",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in2/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_lap/pi2"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf3d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf24"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 8"
+                }
+            ]
+        },
+        {
+            "Name": "buf25",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in2/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi1"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf4d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf25"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 7168"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf26",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in3/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in3"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_lap/pi3"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf5d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf26"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf27",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in3/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in3"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi2"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf6d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf27"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 6"
+                }
+            ]
+        },
+        {
+            "Name": "buf28",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING hdiff_in4/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in4"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_lap/pi4"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf7d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf28"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 7168"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf29",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_lap/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi3"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf8d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf29"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 6688"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf30",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_lap/po1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi4"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf9d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf30"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf31",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_lap/po2"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi5"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf10d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf31"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 2"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf32",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_lap/po3"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux1/pi6"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf11d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf32"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf33",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_flux1/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux2/pi0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf12d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf33"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf34",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_flux1/po1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux2/pi1"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf13d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf34"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf35",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_flux1/po2"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux2/pi2"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf14d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf35"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 6144"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf36",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_flux1/po3"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux2/pi3"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf15d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf36"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 4096"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf37",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_flux1/po4"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING topStencil.core.k_flux2/pi4"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf16d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf37"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 2048"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 3"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "buf38",
+            "attrs": [
+                {
+                    "Key": "is_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "is_port_data_memory_buffer",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING topStencil.core.k_flux2/po0"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING hdiff_out0/pi0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING hdiff_out0"
+                },
+                {
+                    "Key": "IsPong",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "name",
+                    "Val": "STRING buf17d"
+                },
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "fullSize",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "size",
+                    "Val": "INT 1024"
+                },
+                {
+                    "Key": "dataSplits",
+                    "Val": "STRING_LIST buf38"
+                },
+                {
+                    "Key": "offset",
+                    "Val": "INT 0"
+                },
+                {
+                    "Key": "row",
+                    "Val": "INT 4"
+                },
+                {
+                    "Key": "column",
+                    "Val": "INT 7"
+                }
+            ]
+        },
+        {
+            "Name": "PT0",
+            "attrs": [
+                {
+                    "Key": "is_partition",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "color",
+                    "Val": "STRING aquamarine"
+                },
+                {
+                    "Key": "weight",
+                    "Val": "DOUBLE 0.899900"
+                },
+                {
+                    "Key": "reservedMem",
+                    "Val": "STRING sysmem18"
+                }
+            ]
+        },
+        {
+            "Name": "PT1",
+            "attrs": [
+                {
+                    "Key": "is_partition",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "color",
+                    "Val": "STRING coral"
+                },
+                {
+                    "Key": "weight",
+                    "Val": "DOUBLE 0.899900"
+                },
+                {
+                    "Key": "reservedMem",
+                    "Val": "STRING sysmem19"
+                }
+            ]
+        },
+        {
+            "Name": "PT2",
+            "attrs": [
+                {
+                    "Key": "is_partition",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "color",
+                    "Val": "STRING cadetblue1"
+                },
+                {
+                    "Key": "weight",
+                    "Val": "DOUBLE 0.899900"
+                },
+                {
+                    "Key": "reservedMem",
+                    "Val": "STRING sysmem20"
+                }
+            ]
+        },
+        {
+            "Name": "net0",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in0"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi0"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf0"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net1",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi1"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf1"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net1_bcast1",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi0"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf2"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net3",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in2"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi2"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf3"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net3_bcast1",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in2"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi1"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf4"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net5",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in3"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi3"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf5"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net5_bcast1",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in3"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi2"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf6"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net7",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in4"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi4"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf7"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net8",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi3"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf8"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net9",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po1"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi4"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf9"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net10",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po2"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi5"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf10"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net11",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po3"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi6"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf11"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net12",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi0"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf12"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net13",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po1"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi1"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf13"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net14",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po2"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi2"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf14"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net15",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po3"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi3"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf15"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net16",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po4"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi4"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf16"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "net17",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING hdiff_out0"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi0"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf17"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 0"
+                }
+            ]
+        },
+        {
+            "Name": "D_net0",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in0"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi0"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf21"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net1",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi1"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf22"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net1_bcast1",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi0"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf23"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net3",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in2"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi2"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf24"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net3_bcast1",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in2"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi1"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf25"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net5",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in3"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi3"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf26"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net5_bcast1",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in3"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi2"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf27"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net7",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING hdiff_in4"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi4"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf28"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net8",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi3"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf29"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net9",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po1"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi4"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf30"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net10",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po2"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi5"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf31"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net11",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_lap"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po3"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi6"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf32"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net12",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi0"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf33"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net13",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po1"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi1"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf34"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net14",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po2"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi2"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf35"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net15",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po3"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi3"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf36"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net16",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux1"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po4"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi4"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf37"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "D_net17",
+            "attrs": [
+                {
+                    "Key": "is_edge",
+                    "Val": "BOOL 1"
+                },
+                {
+                    "Key": "srcInstance",
+                    "Val": "STRING topStencil.core.k_flux2"
+                },
+                {
+                    "Key": "srcPort",
+                    "Val": "STRING po0"
+                },
+                {
+                    "Key": "dstInstance",
+                    "Val": "STRING hdiff_out0"
+                },
+                {
+                    "Key": "dstPort",
+                    "Val": "STRING pi0"
+                },
+                {
+                    "Key": "numLocks",
+                    "Val": "INT 1"
+                },
+                {
+                    "Key": "edgeType",
+                    "Val": "STRING mem"
+                },
+                {
+                    "Key": "dataName",
+                    "Val": "STRING buf38"
+                },
+                {
+                    "Key": "ephemeral",
+                    "Val": "BOOL 1"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo0",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo1",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo2",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo3",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo4",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo5",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo6",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo7",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo8",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo9",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo10",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo11",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo12",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo13",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo14",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo15",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo16",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        },
+        {
+            "Name": "unconstraint_fifo17",
+            "attrs": [
+                {
+                    "Key": "size",
+                    "Val": "INT -1"
+                },
+                {
+                    "Key": "record_type",
+                    "Val": "STRING unspecified_fifo"
+                }
+            ]
+        }
+    ],
+    "Netlist Element Attrs": [
+        {
+            "Name": "topStencil.core.k_lap",
+            "attrs": [
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "schedule",
+                    "Val": "INT 0"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1",
+            "attrs": [
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "schedule",
+                    "Val": "INT 0"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux2",
+            "attrs": [
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "schedule",
+                    "Val": "INT 0"
+                }
+            ]
+        },
+        {
+            "Name": "hdiff_in0",
+            "attrs": [
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "ioshimType",
+                    "Val": "STRING plioshim"
+                }
+            ]
+        },
+        {
+            "Name": "hdiff_in1",
+            "attrs": [
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "ioshimType",
+                    "Val": "STRING plioshim"
+                }
+            ]
+        },
+        {
+            "Name": "hdiff_in2",
+            "attrs": [
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "ioshimType",
+                    "Val": "STRING plioshim"
+                }
+            ]
+        },
+        {
+            "Name": "hdiff_in3",
+            "attrs": [
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "ioshimType",
+                    "Val": "STRING plioshim"
+                }
+            ]
+        },
+        {
+            "Name": "hdiff_in4",
+            "attrs": [
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "ioshimType",
+                    "Val": "STRING plioshim"
+                }
+            ]
+        },
+        {
+            "Name": "hdiff_out0",
+            "attrs": [
+                {
+                    "Key": "fabric",
+                    "Val": "STRING me"
+                },
+                {
+                    "Key": "ioshimType",
+                    "Val": "STRING plioshim"
+                }
+            ]
+        },
+        {
+            "Name": "hdiff_in0/po0",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_lap/pi0",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "hdiff_in1/po0",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_lap/pi1",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1/pi0",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "hdiff_in2/po0",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_lap/pi2",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1/pi1",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "hdiff_in3/po0",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_lap/pi3",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1/pi2",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "hdiff_in4/po0",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_lap/pi4",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_lap/po0",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1/pi3",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_lap/po1",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1/pi4",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_lap/po2",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1/pi5",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_lap/po3",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1/pi6",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1/po0",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux2/pi0",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1/po1",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux2/pi1",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1/po2",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux2/pi2",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1/po3",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux2/pi3",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux1/po4",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux2/pi4",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "topStencil.core.k_flux2/po0",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        },
+        {
+            "Name": "hdiff_out0/pi0",
+            "attrs": [
+                {
+                    "Key": "bufferType",
+                    "Val": "STRING mem"
+                }
+            ]
+        }
+    ],
+    "Net Routing": [
+        {
+            "Name": "net0",
+            "Route ArcNodes": [
+                {
+                    "Tile": "__BEGIN_ROOT__",
+                    "Arc": "NULL",
+                    "Wire": "NULL"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "NULL",
+                    "Wire": "AIE_PL_TO_AIE_2_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_PL_TO_AIE_2_PIN->>AIE_PL_TO_AIE_2",
+                    "Wire": "AIE_PL_TO_AIE_2"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_PL_TO_AIE_2->>AIE_NOC_FROM_PL_2_PIN",
+                    "Wire": "AIE_NOC_FROM_PL_2_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_NOC_FROM_PL_2_PIN->>AIE_NOC_TO_AIE_2_PIN",
+                    "Wire": "AIE_NOC_TO_AIE_2_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_NOC_TO_AIE_2_PIN->>AIE_NOC_TO_AIE_2",
+                    "Wire": "AIE_NOC_TO_AIE_2"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_NOC_TO_AIE_2->>AIE_SWITCH_S_SOUTH_CH2_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH2_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_S_SOUTH_CH2_PIN->>AIE_SWITCH_M_NORTH_CH2_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH2_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_M_NORTH_CH2_PIN->>AIE_SWITCH_M_NORTH_CH2",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH2"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH2->>AIE_SWITCH_S_SOUTH_CH2_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH2_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH2_PIN->>AIE_SWITCH_M_S2MM_CH0_PIN",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH0_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_S2MM_CH0_PIN->>AIE_SWITCH_M_S2MM_CH0",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH0"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_S2MM_CH0->>AIE_MEMGRP_S_DMA_CH0_PIN",
+                    "Wire": "AIE_MEMGRP_S_DMA_CH0_PIN"
+                }
+            ]
+        },
+        {
+            "Name": "net1",
+            "Route ArcNodes": [
+                {
+                    "Tile": "__BEGIN_ROOT__",
+                    "Arc": "NULL",
+                    "Wire": "NULL"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "NULL",
+                    "Wire": "AIE_PL_TO_AIE_0_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_PL_TO_AIE_0_PIN->>AIE_PL_TO_AIE_0",
+                    "Wire": "AIE_PL_TO_AIE_0"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_PL_TO_AIE_0->>AIE_SWITCH_S_SOUTH_CH0_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH0_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_S_SOUTH_CH0_PIN->>AIE_SWITCH_M_NORTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_M_NORTH_CH3_PIN->>AIE_SWITCH_M_NORTH_CH3",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH3"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH3->>AIE_SWITCH_S_SOUTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH3_PIN"
+                },
+                {
+                    "Tile": "__BEGIN_BRANCH__",
+                    "Arc": "NULL",
+                    "Wire": "NULL"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH3_PIN->>AIE_SWITCH_M_NORTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_NORTH_CH3_PIN->>AIE_SWITCH_M_NORTH_CH3",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH3"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_SOUTH_CH3->>AIE_SWITCH_S_SOUTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_SOUTH_CH3_PIN->>AIE_SWITCH_M_NEXT_CH3_PIN",
+                    "Wire": "AIE_SWITCH_M_NEXT_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_M_NEXT_CH3_PIN->>AIE_SWITCH_M_NEXT_CH3",
+                    "Wire": "AIE_SWITCH_M_NEXT_CH3"
+                },
+                {
+                    "Tile": "AIE_TILE_X6Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_PREV_CH3->>AIE_SWITCH_S_PREV_CH3_PIN",
+                    "Wire": "AIE_SWITCH_S_PREV_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X6Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_PREV_CH3_PIN->>AIE_SWITCH_M_NORTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X6Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_M_NORTH_CH5_PIN->>AIE_SWITCH_M_NORTH_CH5",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5"
+                },
+                {
+                    "Tile": "AIE_TILE_X6Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH5->>AIE_SWITCH_S_SOUTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X6Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH5_PIN->>AIE_SWITCH_M_S2MM_CH0_PIN",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH0_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X6Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_S2MM_CH0_PIN->>AIE_SWITCH_M_S2MM_CH0",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH0"
+                },
+                {
+                    "Tile": "AIE_TILE_X6Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_S2MM_CH0->>AIE_MEMGRP_S_DMA_CH0_PIN",
+                    "Wire": "AIE_MEMGRP_S_DMA_CH0_PIN"
+                },
+                {
+                    "Tile": "__END_BRANCH__",
+                    "Arc": "NULL",
+                    "Wire": "NULL"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH3_PIN->>AIE_SWITCH_M_S2MM_CH1_PIN",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH1_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_S2MM_CH1_PIN->>AIE_SWITCH_M_S2MM_CH1",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH1"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_S2MM_CH1->>AIE_MEMGRP_S_DMA_CH1_PIN",
+                    "Wire": "AIE_MEMGRP_S_DMA_CH1_PIN"
+                }
+            ]
+        },
+        {
+            "Name": "net17",
+            "Route ArcNodes": [
+                {
+                    "Tile": "__BEGIN_ROOT__",
+                    "Arc": "NULL",
+                    "Wire": "NULL"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y5",
+                    "Arc": "NULL",
+                    "Wire": "AIE_MEMGRP_M_DMA_CH0_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y5",
+                    "Arc": "AIE_TILE.AIE_MEMGRP_M_DMA_CH0_PIN->>AIE_MEMGRP_M_DMA_CH0",
+                    "Wire": "AIE_MEMGRP_M_DMA_CH0"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y5",
+                    "Arc": "AIE_TILE.AIE_MEMGRP_M_DMA_CH0->>AIE_SWITCH_S_MM2S_CH0_PIN",
+                    "Wire": "AIE_SWITCH_S_MM2S_CH0_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y5",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_MM2S_CH0_PIN->>AIE_SWITCH_M_SOUTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_M_SOUTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y5",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_SOUTH_CH3_PIN->>AIE_SWITCH_M_SOUTH_CH3",
+                    "Wire": "AIE_SWITCH_M_SOUTH_CH3"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y4",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_NORTH_CH3->>AIE_SWITCH_S_NORTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_S_NORTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y4",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_NORTH_CH3_PIN->>AIE_SWITCH_M_SOUTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_M_SOUTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y4",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_M_SOUTH_CH3_PIN->>AIE_SWITCH_M_SOUTH_CH3",
+                    "Wire": "AIE_SWITCH_M_SOUTH_CH3"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_NORTH_CH3->>AIE_SWITCH_S_NORTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_S_NORTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_NORTH_CH3_PIN->>AIE_SWITCH_M_SOUTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_M_SOUTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_SOUTH_CH3_PIN->>AIE_SWITCH_M_SOUTH_CH3",
+                    "Wire": "AIE_SWITCH_M_SOUTH_CH3"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_NORTH_CH3->>AIE_SWITCH_S_NORTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_S_NORTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_NORTH_CH3_PIN->>AIE_SWITCH_M_SOUTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_M_SOUTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_M_SOUTH_CH3_PIN->>AIE_SWITCH_M_SOUTH_CH3",
+                    "Wire": "AIE_SWITCH_M_SOUTH_CH3"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_NORTH_CH3->>AIE_SWITCH_S_NORTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_S_NORTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_NORTH_CH3_PIN->>AIE_SWITCH_M_SOUTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_M_SOUTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_SOUTH_CH3_PIN->>AIE_SWITCH_M_SOUTH_CH3",
+                    "Wire": "AIE_SWITCH_M_SOUTH_CH3"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_S_NORTH_CH3->>AIE_SWITCH_S_NORTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_S_NORTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_S_NORTH_CH3_PIN->>AIE_SWITCH_M_SOUTH_CH0_PIN",
+                    "Wire": "AIE_SWITCH_M_SOUTH_CH0_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_M_SOUTH_CH0_PIN->>AIE_SWITCH_M_SOUTH_CH0",
+                    "Wire": "AIE_SWITCH_M_SOUTH_CH0"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_M_SOUTH_CH0->>AIE_PL_FROM_AIE_0_PIN",
+                    "Wire": "AIE_PL_FROM_AIE_0_PIN"
+                }
+            ]
+        },
+        {
+            "Name": "net3",
+            "Route ArcNodes": [
+                {
+                    "Tile": "__BEGIN_ROOT__",
+                    "Arc": "NULL",
+                    "Wire": "NULL"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "NULL",
+                    "Wire": "AIE_PL_TO_AIE_6_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_PL_TO_AIE_6_PIN->>AIE_PL_TO_AIE_6",
+                    "Wire": "AIE_PL_TO_AIE_6"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_PL_TO_AIE_6->>AIE_NOC_FROM_PL_6_PIN",
+                    "Wire": "AIE_NOC_FROM_PL_6_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_NOC_FROM_PL_6_PIN->>AIE_NOC_TO_AIE_6_PIN",
+                    "Wire": "AIE_NOC_TO_AIE_6_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_NOC_TO_AIE_6_PIN->>AIE_NOC_TO_AIE_6",
+                    "Wire": "AIE_NOC_TO_AIE_6"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_NOC_TO_AIE_6->>AIE_SWITCH_S_SOUTH_CH6_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH6_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_S_SOUTH_CH6_PIN->>AIE_SWITCH_M_NEXT_CH3_PIN",
+                    "Wire": "AIE_SWITCH_M_NEXT_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_M_NEXT_CH3_PIN->>AIE_SWITCH_M_NEXT_CH3",
+                    "Wire": "AIE_SWITCH_M_NEXT_CH3"
+                },
+                {
+                    "Tile": "AIE_INTF_B3_CORE_X8Y0",
+                    "Arc": "AIE_INTF_B3_CORE.AIE_SWITCH_S_PREV_CH3->>AIE_SWITCH_S_PREV_CH3_PIN",
+                    "Wire": "AIE_SWITCH_S_PREV_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B3_CORE_X8Y0",
+                    "Arc": "AIE_INTF_B3_CORE.AIE_SWITCH_S_PREV_CH3_PIN->>AIE_SWITCH_M_NORTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B3_CORE_X8Y0",
+                    "Arc": "AIE_INTF_B3_CORE.AIE_SWITCH_M_NORTH_CH5_PIN->>AIE_SWITCH_M_NORTH_CH5",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5"
+                },
+                {
+                    "Tile": "AIE_TILE_X8Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH5->>AIE_SWITCH_S_SOUTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X8Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH5_PIN->>AIE_SWITCH_M_NORTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X8Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_NORTH_CH5_PIN->>AIE_SWITCH_M_NORTH_CH5",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5"
+                },
+                {
+                    "Tile": "AIE_TILE_X8Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_SOUTH_CH5->>AIE_SWITCH_S_SOUTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH5_PIN"
+                },
+                {
+                    "Tile": "__BEGIN_BRANCH__",
+                    "Arc": "NULL",
+                    "Wire": "NULL"
+                },
+                {
+                    "Tile": "AIE_TILE_X8Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_SOUTH_CH5_PIN->>AIE_SWITCH_M_NEXT_CH3_PIN",
+                    "Wire": "AIE_SWITCH_M_NEXT_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X8Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_M_NEXT_CH3_PIN->>AIE_SWITCH_M_NEXT_CH3",
+                    "Wire": "AIE_SWITCH_M_NEXT_CH3"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_PREV_CH3->>AIE_SWITCH_S_PREV_CH3_PIN",
+                    "Wire": "AIE_SWITCH_S_PREV_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_PREV_CH3_PIN->>AIE_SWITCH_M_NORTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_M_NORTH_CH3_PIN->>AIE_SWITCH_M_NORTH_CH3",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH3"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH3->>AIE_SWITCH_S_SOUTH_CH3_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH3_PIN->>AIE_SWITCH_M_NORTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_NORTH_CH5_PIN->>AIE_SWITCH_M_NORTH_CH5",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y4",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_SOUTH_CH5->>AIE_SWITCH_S_SOUTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y4",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_SOUTH_CH5_PIN->>AIE_SWITCH_M_S2MM_CH0_PIN",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH0_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y4",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_M_S2MM_CH0_PIN->>AIE_SWITCH_M_S2MM_CH0",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH0"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y4",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_M_S2MM_CH0->>AIE_MEMGRP_S_DMA_CH0_PIN",
+                    "Wire": "AIE_MEMGRP_S_DMA_CH0_PIN"
+                },
+                {
+                    "Tile": "__END_BRANCH__",
+                    "Arc": "NULL",
+                    "Wire": "NULL"
+                },
+                {
+                    "Tile": "AIE_TILE_X8Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_SOUTH_CH5_PIN->>AIE_SWITCH_M_S2MM_CH0_PIN",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH0_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X8Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_M_S2MM_CH0_PIN->>AIE_SWITCH_M_S2MM_CH0",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH0"
+                },
+                {
+                    "Tile": "AIE_TILE_X8Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_M_S2MM_CH0->>AIE_MEMGRP_S_DMA_CH0_PIN",
+                    "Wire": "AIE_MEMGRP_S_DMA_CH0_PIN"
+                }
+            ]
+        },
+        {
+            "Name": "net5",
+            "Route ArcNodes": [
+                {
+                    "Tile": "__BEGIN_ROOT__",
+                    "Arc": "NULL",
+                    "Wire": "NULL"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "NULL",
+                    "Wire": "AIE_PL_TO_AIE_1_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_PL_TO_AIE_1_PIN->>AIE_PL_TO_AIE_1",
+                    "Wire": "AIE_PL_TO_AIE_1"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_PL_TO_AIE_1->>AIE_SWITCH_S_SOUTH_CH1_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH1_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_S_SOUTH_CH1_PIN->>AIE_SWITCH_M_NORTH_CH4_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH4_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_M_NORTH_CH4_PIN->>AIE_SWITCH_M_NORTH_CH4",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH4"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH4->>AIE_SWITCH_S_SOUTH_CH4_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH4_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH4_PIN->>AIE_SWITCH_M_NORTH_CH4_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH4_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_NORTH_CH4_PIN->>AIE_SWITCH_M_NORTH_CH4",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH4"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_SOUTH_CH4->>AIE_SWITCH_S_SOUTH_CH4_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH4_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_SOUTH_CH4_PIN->>AIE_SWITCH_M_NORTH_CH4_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH4_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_M_NORTH_CH4_PIN->>AIE_SWITCH_M_NORTH_CH4",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH4"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH4->>AIE_SWITCH_S_SOUTH_CH4_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH4_PIN"
+                },
+                {
+                    "Tile": "__BEGIN_BRANCH__",
+                    "Arc": "NULL",
+                    "Wire": "NULL"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH4_PIN->>AIE_SWITCH_M_PREV_CH3_PIN",
+                    "Wire": "AIE_SWITCH_M_PREV_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_PREV_CH3_PIN->>AIE_SWITCH_M_PREV_CH3",
+                    "Wire": "AIE_SWITCH_M_PREV_CH3"
+                },
+                {
+                    "Tile": "AIE_TILE_X6Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_NEXT_CH3->>AIE_SWITCH_S_NEXT_CH3_PIN",
+                    "Wire": "AIE_SWITCH_S_NEXT_CH3_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X6Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_NEXT_CH3_PIN->>AIE_SWITCH_M_S2MM_CH1_PIN",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH1_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X6Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_S2MM_CH1_PIN->>AIE_SWITCH_M_S2MM_CH1",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH1"
+                },
+                {
+                    "Tile": "AIE_TILE_X6Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_S2MM_CH1->>AIE_MEMGRP_S_DMA_CH1_PIN",
+                    "Wire": "AIE_MEMGRP_S_DMA_CH1_PIN"
+                },
+                {
+                    "Tile": "__END_BRANCH__",
+                    "Arc": "NULL",
+                    "Wire": "NULL"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH4_PIN->>AIE_SWITCH_M_S2MM_CH0_PIN",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH0_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_S2MM_CH0_PIN->>AIE_SWITCH_M_S2MM_CH0",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH0"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_S2MM_CH0->>AIE_MEMGRP_S_DMA_CH0_PIN",
+                    "Wire": "AIE_MEMGRP_S_DMA_CH0_PIN"
+                }
+            ]
+        },
+        {
+            "Name": "net7",
+            "Route ArcNodes": [
+                {
+                    "Tile": "__BEGIN_ROOT__",
+                    "Arc": "NULL",
+                    "Wire": "NULL"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "NULL",
+                    "Wire": "AIE_PL_TO_AIE_4_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_PL_TO_AIE_4_PIN->>AIE_PL_TO_AIE_4",
+                    "Wire": "AIE_PL_TO_AIE_4"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_PL_TO_AIE_4->>AIE_SWITCH_S_SOUTH_CH4_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH4_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_S_SOUTH_CH4_PIN->>AIE_SWITCH_M_NORTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_INTF_B2_CORE_X7Y0",
+                    "Arc": "AIE_INTF_B2_CORE.AIE_SWITCH_M_NORTH_CH5_PIN->>AIE_SWITCH_M_NORTH_CH5",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH5->>AIE_SWITCH_S_SOUTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH5_PIN->>AIE_SWITCH_M_NORTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y1",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_NORTH_CH5_PIN->>AIE_SWITCH_M_NORTH_CH5",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_SOUTH_CH5->>AIE_SWITCH_S_SOUTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_S_SOUTH_CH5_PIN->>AIE_SWITCH_M_NORTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y2",
+                    "Arc": "AIE_TILE_MY.AIE_SWITCH_M_NORTH_CH5_PIN->>AIE_SWITCH_M_NORTH_CH5",
+                    "Wire": "AIE_SWITCH_M_NORTH_CH5"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH5->>AIE_SWITCH_S_SOUTH_CH5_PIN",
+                    "Wire": "AIE_SWITCH_S_SOUTH_CH5_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_S_SOUTH_CH5_PIN->>AIE_SWITCH_M_S2MM_CH1_PIN",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH1_PIN"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_S2MM_CH1_PIN->>AIE_SWITCH_M_S2MM_CH1",
+                    "Wire": "AIE_SWITCH_M_S2MM_CH1"
+                },
+                {
+                    "Tile": "AIE_TILE_X7Y3",
+                    "Arc": "AIE_TILE.AIE_SWITCH_M_S2MM_CH1->>AIE_MEMGRP_S_DMA_CH1_PIN",
+                    "Wire": "AIE_MEMGRP_S_DMA_CH1_PIN"
+                }
+            ]
+        }
+    ]
+}

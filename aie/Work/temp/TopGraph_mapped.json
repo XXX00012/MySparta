@@ -1,0 +1,2249 @@
+{
+    "schema": "MEGraphSchema-0.4",
+    "id": "root",
+    "blockTypes": {
+        "b3": {
+            "type": "plio",
+            "ports": {
+                "po0": {
+                    "type": "stream",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "portName": "in_plio[0].out[0]"
+                }
+            }
+        },
+        "b4": {
+            "type": "plio",
+            "ports": {
+                "po0": {
+                    "type": "stream",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "portName": "in_plio[1].out[0]"
+                }
+            }
+        },
+        "b5": {
+            "type": "plio",
+            "ports": {
+                "po0": {
+                    "type": "stream",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "portName": "in_plio[2].out[0]"
+                }
+            }
+        },
+        "b6": {
+            "type": "plio",
+            "ports": {
+                "po0": {
+                    "type": "stream",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "portName": "in_plio[3].out[0]"
+                }
+            }
+        },
+        "b7": {
+            "type": "plio",
+            "ports": {
+                "po0": {
+                    "type": "stream",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "portName": "in_plio[4].out[0]"
+                }
+            }
+        },
+        "b8": {
+            "type": "plio",
+            "ports": {
+                "pi0": {
+                    "type": "stream",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "portName": "out_plio.in[0]"
+                }
+            }
+        },
+        "b0": {
+            "type": "function",
+            "function": "hdiff_lap",
+            "srcFile": "ProcessUnit/hdiff_lap.cc",
+            "headers": [
+                "ProcessUnit/hdiff.h",
+                "include.h"
+            ],
+            "ports": {
+                "pi0": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 0,
+                    "circularBuffer": 1,
+                    "portName": "in[0]",
+                    "varName": "row0_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi1": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 1,
+                    "circularBuffer": 1,
+                    "portName": "in[1]",
+                    "varName": "row1_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi2": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 2,
+                    "circularBuffer": 1,
+                    "portName": "in[2]",
+                    "varName": "row2_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi3": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 3,
+                    "circularBuffer": 1,
+                    "portName": "in[3]",
+                    "varName": "row3_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi4": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 4,
+                    "circularBuffer": 1,
+                    "portName": "in[4]",
+                    "varName": "row4_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "po0": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "parameterIndex": 5,
+                    "circularBuffer": 1,
+                    "portName": "out[0]",
+                    "varName": "out_flux1_win",
+                    "cppDataType": "output_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "po1": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "parameterIndex": 6,
+                    "circularBuffer": 1,
+                    "portName": "out[1]",
+                    "varName": "out_flux2_win",
+                    "cppDataType": "output_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "po2": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "parameterIndex": 7,
+                    "circularBuffer": 1,
+                    "portName": "out[2]",
+                    "varName": "out_flux3_win",
+                    "cppDataType": "output_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "po3": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "parameterIndex": 8,
+                    "circularBuffer": 1,
+                    "portName": "out[3]",
+                    "varName": "out_flux4_win",
+                    "cppDataType": "output_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                }
+            }
+        },
+        "b1": {
+            "type": "function",
+            "function": "hdiff_flux1",
+            "srcFile": "ProcessUnit/hdiff_flux1.cc",
+            "headers": [
+                "ProcessUnit/hdiff.h",
+                "include.h"
+            ],
+            "ports": {
+                "pi0": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 0,
+                    "circularBuffer": 1,
+                    "portName": "in[0]",
+                    "varName": "row1_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi1": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 1,
+                    "circularBuffer": 1,
+                    "portName": "in[1]",
+                    "varName": "row2_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi2": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 2,
+                    "circularBuffer": 1,
+                    "portName": "in[2]",
+                    "varName": "row3_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi3": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 3,
+                    "circularBuffer": 1,
+                    "portName": "in[3]",
+                    "varName": "flux_forward1_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi4": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 4,
+                    "circularBuffer": 1,
+                    "portName": "in[4]",
+                    "varName": "flux_forward2_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi5": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 5,
+                    "circularBuffer": 1,
+                    "portName": "in[5]",
+                    "varName": "flux_forward3_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi6": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 6,
+                    "circularBuffer": 1,
+                    "portName": "in[6]",
+                    "varName": "flux_forward4_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "po0": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "parameterIndex": 7,
+                    "circularBuffer": 1,
+                    "portName": "out[0]",
+                    "varName": "flux_inter1_win",
+                    "cppDataType": "output_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "po1": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "parameterIndex": 8,
+                    "circularBuffer": 1,
+                    "portName": "out[1]",
+                    "varName": "flux_inter2_win",
+                    "cppDataType": "output_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "po2": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "parameterIndex": 9,
+                    "circularBuffer": 1,
+                    "portName": "out[2]",
+                    "varName": "flux_inter3_win",
+                    "cppDataType": "output_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "po3": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "parameterIndex": 10,
+                    "circularBuffer": 1,
+                    "portName": "out[3]",
+                    "varName": "flux_inter4_win",
+                    "cppDataType": "output_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "po4": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "parameterIndex": 11,
+                    "circularBuffer": 1,
+                    "portName": "out[4]",
+                    "varName": "flux_inter5_win",
+                    "cppDataType": "output_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                }
+            }
+        },
+        "b2": {
+            "type": "function",
+            "function": "hdiff_flux2",
+            "srcFile": "ProcessUnit/hdiff_flux2.cc",
+            "headers": [
+                "ProcessUnit/hdiff.h",
+                "include.h"
+            ],
+            "ports": {
+                "pi0": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 0,
+                    "circularBuffer": 1,
+                    "portName": "in[0]",
+                    "varName": "flux_inter1_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi1": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 1,
+                    "circularBuffer": 1,
+                    "portName": "in[1]",
+                    "varName": "flux_inter2_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi2": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 2,
+                    "circularBuffer": 1,
+                    "portName": "in[2]",
+                    "varName": "flux_inter3_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi3": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 3,
+                    "circularBuffer": 1,
+                    "portName": "in[3]",
+                    "varName": "flux_inter4_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "pi4": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "in",
+                    "parameterIndex": 4,
+                    "circularBuffer": 1,
+                    "portName": "in[4]",
+                    "varName": "flux_inter5_win",
+                    "cppDataType": "input_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                },
+                "po0": {
+                    "type": "mem",
+                    "elementType": "int32",
+                    "direction": "out",
+                    "parameterIndex": 5,
+                    "circularBuffer": 1,
+                    "portName": "out[0]",
+                    "varName": "out_win",
+                    "cppDataType": "output_window<int> *",
+                    "hasCyclicAddressing": true,
+                    "margin": 4294967295
+                }
+            }
+        },
+        "ps_b9": {
+            "type": "function",
+            "function": "ps_main",
+            "srcFile": "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.cpp",
+            "implType": "unknown"
+        }
+    },
+    "blockInstances": {
+        "i0": {
+            "blockType": "b0",
+            "graphIds": [
+                1,
+                0
+            ],
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "qualifiedGraphName": "topStencil.core",
+            "qualifiedName": "topStencil.core.k_lap",
+            "runTime": 0.8999,
+            "fabric": "me",
+            "instanceId": 0,
+            "loc": "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:24:17"
+        },
+        "i1": {
+            "blockType": "b1",
+            "graphIds": [
+                1,
+                0
+            ],
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "qualifiedGraphName": "topStencil.core",
+            "qualifiedName": "topStencil.core.k_flux1",
+            "runTime": 0.8999,
+            "fabric": "me",
+            "instanceId": 1,
+            "loc": "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:25:19"
+        },
+        "i2": {
+            "blockType": "b2",
+            "graphIds": [
+                1,
+                0
+            ],
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "qualifiedGraphName": "topStencil.core",
+            "qualifiedName": "topStencil.core.k_flux2",
+            "runTime": 0.8999,
+            "fabric": "me",
+            "instanceId": 2,
+            "loc": "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:26:19"
+        },
+        "i3": {
+            "blockType": "b3",
+            "graphIds": [
+                0
+            ],
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "qualifiedGraphName": "topStencil",
+            "qualifiedName": "topStencil.in_plio[0]",
+            "dataWidth": 32,
+            "dataFile": "./data/hdiff_in0.txt",
+            "logicalName": "hdiff_in0",
+            "plFreq": 450.0,
+            "instanceId": 0,
+            "loc": "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:13:5"
+        },
+        "i4": {
+            "blockType": "b4",
+            "graphIds": [
+                0
+            ],
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "qualifiedGraphName": "topStencil",
+            "qualifiedName": "topStencil.in_plio[1]",
+            "dataWidth": 32,
+            "dataFile": "./data/hdiff_in1.txt",
+            "logicalName": "hdiff_in1",
+            "plFreq": 450.0,
+            "instanceId": 1,
+            "loc": "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:13:5"
+        },
+        "i5": {
+            "blockType": "b5",
+            "graphIds": [
+                0
+            ],
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "qualifiedGraphName": "topStencil",
+            "qualifiedName": "topStencil.in_plio[2]",
+            "dataWidth": 32,
+            "dataFile": "./data/hdiff_in2.txt",
+            "logicalName": "hdiff_in2",
+            "plFreq": 450.0,
+            "instanceId": 2,
+            "loc": "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:13:5"
+        },
+        "i6": {
+            "blockType": "b6",
+            "graphIds": [
+                0
+            ],
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "qualifiedGraphName": "topStencil",
+            "qualifiedName": "topStencil.in_plio[3]",
+            "dataWidth": 32,
+            "dataFile": "./data/hdiff_in3.txt",
+            "logicalName": "hdiff_in3",
+            "plFreq": 450.0,
+            "instanceId": 3,
+            "loc": "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:13:5"
+        },
+        "i7": {
+            "blockType": "b7",
+            "graphIds": [
+                0
+            ],
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "qualifiedGraphName": "topStencil",
+            "qualifiedName": "topStencil.in_plio[4]",
+            "dataWidth": 32,
+            "dataFile": "./data/hdiff_in4.txt",
+            "logicalName": "hdiff_in4",
+            "plFreq": 450.0,
+            "instanceId": 4,
+            "loc": "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:13:5"
+        },
+        "i8": {
+            "blockType": "b8",
+            "graphIds": [
+                0
+            ],
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "qualifiedGraphName": "topStencil",
+            "qualifiedName": "topStencil.out_plio",
+            "dataWidth": 32,
+            "dataFile": "./data/hdiff_outputaie0.txt",
+            "logicalName": "hdiff_out0",
+            "plFreq": 450.0,
+            "instanceId": 5,
+            "loc": "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:14:5"
+        },
+        "ps_i9": {
+            "blockType": "ps_b9",
+            "graphIds": [
+                -1
+            ],
+            "fabric": "fpga",
+            "plAxiLite": "useDefault",
+            "plFreq": 450.0
+        }
+    },
+    "portInstances": {
+        "i0_pi0": {
+            "margin": 0,
+            "port": "pi0",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_lap.in[0]",
+            "qualifiedName": "topStencil.core.k_lap.in[0]",
+            "instanceId": 6,
+            "blockInstance": "i0",
+            "blockSize": 1024
+        },
+        "i0_pi1": {
+            "margin": 0,
+            "port": "pi1",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_lap.in[1]",
+            "qualifiedName": "topStencil.core.k_lap.in[1]",
+            "instanceId": 7,
+            "blockInstance": "i0",
+            "blockSize": 1024
+        },
+        "i0_pi2": {
+            "margin": 0,
+            "port": "pi2",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_lap.in[2]",
+            "qualifiedName": "topStencil.core.k_lap.in[2]",
+            "instanceId": 8,
+            "blockInstance": "i0",
+            "blockSize": 1024
+        },
+        "i0_pi3": {
+            "margin": 0,
+            "port": "pi3",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_lap.in[3]",
+            "qualifiedName": "topStencil.core.k_lap.in[3]",
+            "instanceId": 9,
+            "blockInstance": "i0",
+            "blockSize": 1024
+        },
+        "i0_pi4": {
+            "margin": 0,
+            "port": "pi4",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_lap.in[4]",
+            "qualifiedName": "topStencil.core.k_lap.in[4]",
+            "instanceId": 10,
+            "blockInstance": "i0",
+            "blockSize": 1024
+        },
+        "i0_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_lap.out[0]",
+            "qualifiedName": "topStencil.core.k_lap.out[0]",
+            "instanceId": 11,
+            "blockInstance": "i0",
+            "blockSize": 1024
+        },
+        "i0_po1": {
+            "margin": 0,
+            "port": "po1",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_lap.out[1]",
+            "qualifiedName": "topStencil.core.k_lap.out[1]",
+            "instanceId": 12,
+            "blockInstance": "i0",
+            "blockSize": 1024
+        },
+        "i0_po2": {
+            "margin": 0,
+            "port": "po2",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_lap.out[2]",
+            "qualifiedName": "topStencil.core.k_lap.out[2]",
+            "instanceId": 13,
+            "blockInstance": "i0",
+            "blockSize": 1024
+        },
+        "i0_po3": {
+            "margin": 0,
+            "port": "po3",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_lap.out[3]",
+            "qualifiedName": "topStencil.core.k_lap.out[3]",
+            "instanceId": 14,
+            "blockInstance": "i0",
+            "blockSize": 1024
+        },
+        "i1_pi0": {
+            "margin": 0,
+            "port": "pi0",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux1.in[0]",
+            "qualifiedName": "topStencil.core.k_flux1.in[0]",
+            "instanceId": 15,
+            "blockInstance": "i1",
+            "blockSize": 1024
+        },
+        "i1_pi1": {
+            "margin": 0,
+            "port": "pi1",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux1.in[1]",
+            "qualifiedName": "topStencil.core.k_flux1.in[1]",
+            "instanceId": 16,
+            "blockInstance": "i1",
+            "blockSize": 1024
+        },
+        "i1_pi2": {
+            "margin": 0,
+            "port": "pi2",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux1.in[2]",
+            "qualifiedName": "topStencil.core.k_flux1.in[2]",
+            "instanceId": 17,
+            "blockInstance": "i1",
+            "blockSize": 1024
+        },
+        "i1_pi3": {
+            "margin": 0,
+            "port": "pi3",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux1.in[3]",
+            "qualifiedName": "topStencil.core.k_flux1.in[3]",
+            "instanceId": 18,
+            "blockInstance": "i1",
+            "blockSize": 1024
+        },
+        "i1_pi4": {
+            "margin": 0,
+            "port": "pi4",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux1.in[4]",
+            "qualifiedName": "topStencil.core.k_flux1.in[4]",
+            "instanceId": 19,
+            "blockInstance": "i1",
+            "blockSize": 1024
+        },
+        "i1_pi5": {
+            "margin": 0,
+            "port": "pi5",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux1.in[5]",
+            "qualifiedName": "topStencil.core.k_flux1.in[5]",
+            "instanceId": 20,
+            "blockInstance": "i1",
+            "blockSize": 1024
+        },
+        "i1_pi6": {
+            "margin": 0,
+            "port": "pi6",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux1.in[6]",
+            "qualifiedName": "topStencil.core.k_flux1.in[6]",
+            "instanceId": 21,
+            "blockInstance": "i1",
+            "blockSize": 1024
+        },
+        "i1_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux1.out[0]",
+            "qualifiedName": "topStencil.core.k_flux1.out[0]",
+            "instanceId": 22,
+            "blockInstance": "i1",
+            "blockSize": 2048
+        },
+        "i1_po1": {
+            "margin": 0,
+            "port": "po1",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux1.out[1]",
+            "qualifiedName": "topStencil.core.k_flux1.out[1]",
+            "instanceId": 23,
+            "blockInstance": "i1",
+            "blockSize": 2048
+        },
+        "i1_po2": {
+            "margin": 0,
+            "port": "po2",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux1.out[2]",
+            "qualifiedName": "topStencil.core.k_flux1.out[2]",
+            "instanceId": 24,
+            "blockInstance": "i1",
+            "blockSize": 2048
+        },
+        "i1_po3": {
+            "margin": 0,
+            "port": "po3",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux1.out[3]",
+            "qualifiedName": "topStencil.core.k_flux1.out[3]",
+            "instanceId": 25,
+            "blockInstance": "i1",
+            "blockSize": 2048
+        },
+        "i1_po4": {
+            "margin": 0,
+            "port": "po4",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux1.out[4]",
+            "qualifiedName": "topStencil.core.k_flux1.out[4]",
+            "instanceId": 26,
+            "blockInstance": "i1",
+            "blockSize": 2048
+        },
+        "i2_pi0": {
+            "margin": 0,
+            "port": "pi0",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux2.in[0]",
+            "qualifiedName": "topStencil.core.k_flux2.in[0]",
+            "instanceId": 27,
+            "blockInstance": "i2",
+            "blockSize": 2048
+        },
+        "i2_pi1": {
+            "margin": 0,
+            "port": "pi1",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux2.in[1]",
+            "qualifiedName": "topStencil.core.k_flux2.in[1]",
+            "instanceId": 28,
+            "blockInstance": "i2",
+            "blockSize": 2048
+        },
+        "i2_pi2": {
+            "margin": 0,
+            "port": "pi2",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux2.in[2]",
+            "qualifiedName": "topStencil.core.k_flux2.in[2]",
+            "instanceId": 29,
+            "blockInstance": "i2",
+            "blockSize": 2048
+        },
+        "i2_pi3": {
+            "margin": 0,
+            "port": "pi3",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux2.in[3]",
+            "qualifiedName": "topStencil.core.k_flux2.in[3]",
+            "instanceId": 30,
+            "blockInstance": "i2",
+            "blockSize": 2048
+        },
+        "i2_pi4": {
+            "margin": 0,
+            "port": "pi4",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux2.in[4]",
+            "qualifiedName": "topStencil.core.k_flux2.in[4]",
+            "instanceId": 31,
+            "blockInstance": "i2",
+            "blockSize": 2048
+        },
+        "i2_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "k_flux2.out[0]",
+            "qualifiedName": "topStencil.core.k_flux2.out[0]",
+            "instanceId": 32,
+            "blockInstance": "i2",
+            "blockSize": 1024
+        },
+        "i3_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "in_plio[0].out[0]",
+            "qualifiedName": "topStencil.in_plio[0].out[0]",
+            "qualifiedGraphPortAliasNames": [
+                "topStencil.core.in[0]"
+            ],
+            "blockInstance": "i3"
+        },
+        "i4_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "in_plio[1].out[0]",
+            "qualifiedName": "topStencil.in_plio[1].out[0]",
+            "qualifiedGraphPortAliasNames": [
+                "topStencil.core.in[1]"
+            ],
+            "blockInstance": "i4"
+        },
+        "i5_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "in_plio[2].out[0]",
+            "qualifiedName": "topStencil.in_plio[2].out[0]",
+            "qualifiedGraphPortAliasNames": [
+                "topStencil.core.in[2]"
+            ],
+            "blockInstance": "i5"
+        },
+        "i6_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "in_plio[3].out[0]",
+            "qualifiedName": "topStencil.in_plio[3].out[0]",
+            "qualifiedGraphPortAliasNames": [
+                "topStencil.core.in[3]"
+            ],
+            "blockInstance": "i6"
+        },
+        "i7_po0": {
+            "margin": 0,
+            "port": "po0",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "in_plio[4].out[0]",
+            "qualifiedName": "topStencil.in_plio[4].out[0]",
+            "qualifiedGraphPortAliasNames": [
+                "topStencil.core.in[4]"
+            ],
+            "blockInstance": "i7"
+        },
+        "i8_pi0": {
+            "margin": 0,
+            "port": "pi0",
+            "graphName": "topStencil",
+            "graphType": "TopStencilGraph",
+            "portName": "out_plio.in[0]",
+            "qualifiedName": "topStencil.out_plio.in[0]",
+            "qualifiedGraphPortAliasNames": [
+                "topStencil.core.out"
+            ],
+            "blockInstance": "i8"
+        }
+    },
+    "nets": {
+        "net0": {
+            "srcInstance": "i3",
+            "srcPort": "i3_po0",
+            "dstInstance": "i0",
+            "dstPort": "i0_pi0",
+            "varNames": [
+                "",
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:33:9",
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:45:9"
+            ]
+        },
+        "net1": {
+            "srcInstance": "i4",
+            "srcPort": "i4_po0",
+            "dstInstance": "i0",
+            "dstPort": "i0_pi1",
+            "varNames": [
+                "",
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:34:9",
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:46:9"
+            ]
+        },
+        "net1_bcast1": {
+            "srcInstance": "i4",
+            "srcPort": "i4_po0",
+            "dstInstance": "i1",
+            "dstPort": "i1_pi0",
+            "varNames": [
+                "",
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:34:9",
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:52:9"
+            ]
+        },
+        "net3": {
+            "srcInstance": "i5",
+            "srcPort": "i5_po0",
+            "dstInstance": "i0",
+            "dstPort": "i0_pi2",
+            "varNames": [
+                "",
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:35:9",
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:47:9"
+            ]
+        },
+        "net3_bcast1": {
+            "srcInstance": "i5",
+            "srcPort": "i5_po0",
+            "dstInstance": "i1",
+            "dstPort": "i1_pi1",
+            "varNames": [
+                "",
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:35:9",
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:53:9"
+            ]
+        },
+        "net5": {
+            "srcInstance": "i6",
+            "srcPort": "i6_po0",
+            "dstInstance": "i0",
+            "dstPort": "i0_pi3",
+            "varNames": [
+                "",
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:36:9",
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:48:9"
+            ]
+        },
+        "net5_bcast1": {
+            "srcInstance": "i6",
+            "srcPort": "i6_po0",
+            "dstInstance": "i1",
+            "dstPort": "i1_pi2",
+            "varNames": [
+                "",
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:36:9",
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:54:9"
+            ]
+        },
+        "net7": {
+            "srcInstance": "i7",
+            "srcPort": "i7_po0",
+            "dstInstance": "i0",
+            "dstPort": "i0_pi4",
+            "varNames": [
+                "",
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:37:9",
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:49:9"
+            ]
+        },
+        "net8": {
+            "srcInstance": "i0",
+            "srcPort": "i0_po0",
+            "dstInstance": "i1",
+            "dstPort": "i1_pi3",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:57:9"
+            ]
+        },
+        "net9": {
+            "srcInstance": "i0",
+            "srcPort": "i0_po1",
+            "dstInstance": "i1",
+            "dstPort": "i1_pi4",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:58:9"
+            ]
+        },
+        "net10": {
+            "srcInstance": "i0",
+            "srcPort": "i0_po2",
+            "dstInstance": "i1",
+            "dstPort": "i1_pi5",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:59:9"
+            ]
+        },
+        "net11": {
+            "srcInstance": "i0",
+            "srcPort": "i0_po3",
+            "dstInstance": "i1",
+            "dstPort": "i1_pi6",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:60:9"
+            ]
+        },
+        "net12": {
+            "srcInstance": "i1",
+            "srcPort": "i1_po0",
+            "dstInstance": "i2",
+            "dstPort": "i2_pi0",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:63:9"
+            ]
+        },
+        "net13": {
+            "srcInstance": "i1",
+            "srcPort": "i1_po1",
+            "dstInstance": "i2",
+            "dstPort": "i2_pi1",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:64:9"
+            ]
+        },
+        "net14": {
+            "srcInstance": "i1",
+            "srcPort": "i1_po2",
+            "dstInstance": "i2",
+            "dstPort": "i2_pi2",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:65:9"
+            ]
+        },
+        "net15": {
+            "srcInstance": "i1",
+            "srcPort": "i1_po3",
+            "dstInstance": "i2",
+            "dstPort": "i2_pi3",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:66:9"
+            ]
+        },
+        "net16": {
+            "srcInstance": "i1",
+            "srcPort": "i1_po4",
+            "dstInstance": "i2",
+            "dstPort": "i2_pi4",
+            "varNames": [
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:67:9"
+            ]
+        },
+        "net17": {
+            "srcInstance": "i2",
+            "srcPort": "i2_po0",
+            "dstInstance": "i8",
+            "dstPort": "i8_pi0",
+            "varNames": [
+                "",
+                ""
+            ],
+            "locs": [
+                "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h:69:9",
+                "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h:39:9"
+            ]
+        }
+    },
+    "debugInfo": {
+        "i0": {
+            "varName": "k_lap"
+        },
+        "i1": {
+            "varName": "k_flux1"
+        },
+        "i2": {
+            "varName": "k_flux2"
+        },
+        "i3": {
+            "varName": "in_plio[0]"
+        },
+        "i4": {
+            "varName": "in_plio[1]"
+        },
+        "i5": {
+            "varName": "in_plio[2]"
+        },
+        "i6": {
+            "varName": "in_plio[3]"
+        },
+        "i7": {
+            "varName": "in_plio[4]"
+        },
+        "i8": {
+            "varName": "out_plio"
+        },
+        "ps_i9": {
+            "varName": ""
+        },
+        "i0_pi0": {
+            "varName": "k_lap.in[0]"
+        },
+        "i0_pi1": {
+            "varName": "k_lap.in[1]"
+        },
+        "i0_pi2": {
+            "varName": "k_lap.in[2]"
+        },
+        "i0_pi3": {
+            "varName": "k_lap.in[3]"
+        },
+        "i0_pi4": {
+            "varName": "k_lap.in[4]"
+        },
+        "i0_po0": {
+            "varName": "k_lap.out[0]"
+        },
+        "i0_po1": {
+            "varName": "k_lap.out[1]"
+        },
+        "i0_po2": {
+            "varName": "k_lap.out[2]"
+        },
+        "i0_po3": {
+            "varName": "k_lap.out[3]"
+        },
+        "i1_pi0": {
+            "varName": "k_flux1.in[0]"
+        },
+        "i1_pi1": {
+            "varName": "k_flux1.in[1]"
+        },
+        "i1_pi2": {
+            "varName": "k_flux1.in[2]"
+        },
+        "i1_pi3": {
+            "varName": "k_flux1.in[3]"
+        },
+        "i1_pi4": {
+            "varName": "k_flux1.in[4]"
+        },
+        "i1_pi5": {
+            "varName": "k_flux1.in[5]"
+        },
+        "i1_pi6": {
+            "varName": "k_flux1.in[6]"
+        },
+        "i1_po0": {
+            "varName": "k_flux1.out[0]"
+        },
+        "i1_po1": {
+            "varName": "k_flux1.out[1]"
+        },
+        "i1_po2": {
+            "varName": "k_flux1.out[2]"
+        },
+        "i1_po3": {
+            "varName": "k_flux1.out[3]"
+        },
+        "i1_po4": {
+            "varName": "k_flux1.out[4]"
+        },
+        "i2_pi0": {
+            "varName": "k_flux2.in[0]"
+        },
+        "i2_pi1": {
+            "varName": "k_flux2.in[1]"
+        },
+        "i2_pi2": {
+            "varName": "k_flux2.in[2]"
+        },
+        "i2_pi3": {
+            "varName": "k_flux2.in[3]"
+        },
+        "i2_pi4": {
+            "varName": "k_flux2.in[4]"
+        },
+        "i2_po0": {
+            "varName": "k_flux2.out[0]"
+        },
+        "i3_po0": {
+            "varName": "in_plio[0].out[0]"
+        },
+        "i4_po0": {
+            "varName": "in_plio[1].out[0]"
+        },
+        "i5_po0": {
+            "varName": "in_plio[2].out[0]"
+        },
+        "i6_po0": {
+            "varName": "in_plio[3].out[0]"
+        },
+        "i7_po0": {
+            "varName": "in_plio[4].out[0]"
+        },
+        "i8_pi0": {
+            "varName": "out_plio.in[0]"
+        }
+    },
+    "graphFilesInfo": {
+        "headerFiles": [
+            "/media/4T/home/xianyijiang/my_sparta/aie/././ProcessGraph/StencilCoreGraph.h",
+            "/media/4T/home/xianyijiang/my_sparta/aie/./TopGraph.h"
+        ]
+    },
+    "mapping": {
+        "blockInstanceMap": {
+            "i0": {
+                "fabric": "me",
+                "schedule": 0,
+                "column": 7,
+                "row": 1,
+                "coreId": 57
+            },
+            "i1": {
+                "fabric": "me",
+                "schedule": 0,
+                "column": 7,
+                "row": 2,
+                "coreId": 107
+            },
+            "i2": {
+                "fabric": "me",
+                "schedule": 0,
+                "column": 7,
+                "row": 3,
+                "coreId": 157
+            },
+            "i3": {
+                "fabric": "me",
+                "ioshimId": 7,
+                "ioshimType": "plioshim"
+            },
+            "i4": {
+                "fabric": "me",
+                "ioshimId": 7,
+                "ioshimType": "plioshim"
+            },
+            "i5": {
+                "fabric": "me",
+                "ioshimId": 7,
+                "ioshimType": "plioshim"
+            },
+            "i6": {
+                "fabric": "me",
+                "ioshimId": 7,
+                "ioshimType": "plioshim"
+            },
+            "i7": {
+                "fabric": "me",
+                "ioshimId": 7,
+                "ioshimType": "plioshim"
+            },
+            "i8": {
+                "fabric": "me",
+                "ioshimId": 7,
+                "ioshimType": "plioshim"
+            }
+        },
+        "portInstanceMap": {
+            "i0_pi0": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf0",
+                        "fabric": "me",
+                        "row": 0,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf0d",
+                        "fabric": "me",
+                        "row": 0,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i0_pi1": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf1",
+                        "fabric": "me",
+                        "row": 0,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf1d",
+                        "fabric": "me",
+                        "row": 0,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i0_pi2": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf3",
+                        "fabric": "me",
+                        "row": 1,
+                        "column": 8,
+                        "bankId": 2,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf3d",
+                        "fabric": "me",
+                        "row": 1,
+                        "column": 8,
+                        "bankId": 1,
+                        "offset": 1024,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i0_pi3": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf5",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf5d",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i0_pi4": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf7",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 1024,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf7d",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 7168,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i0_po0": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf8",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 6144,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf8d",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 6688,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i0_po1": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf9",
+                        "fabric": "me",
+                        "row": 1,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf9d",
+                        "fabric": "me",
+                        "row": 1,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i0_po2": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf10",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf10d",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 2048,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i0_po3": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf11",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 7168,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf11d",
+                        "fabric": "me",
+                        "row": 1,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i1_pi0": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf2",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 6,
+                        "bankId": 0,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf2d",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 6,
+                        "bankId": 1,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i1_pi1": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf4",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 4096,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf4d",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 7168,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i1_pi2": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf6",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 6,
+                        "bankId": 2,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf6d",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 6,
+                        "bankId": 3,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i1_pi3": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf8",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 6144,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf8d",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 6688,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i1_pi4": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf9",
+                        "fabric": "me",
+                        "row": 1,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf9d",
+                        "fabric": "me",
+                        "row": 1,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i1_pi5": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf10",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf10d",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 2048,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i1_pi6": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf11",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 7168,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf11d",
+                        "fabric": "me",
+                        "row": 1,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i1_po0": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf12",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 5120,
+                        "size": 2048
+                    },
+                    {
+                        "name": "buf12d",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 0,
+                        "size": 2048
+                    }
+                ]
+            },
+            "i1_po1": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf13",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 0,
+                        "size": 2048
+                    },
+                    {
+                        "name": "buf13d",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 2048,
+                        "size": 2048
+                    }
+                ]
+            },
+            "i1_po2": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf14",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 2048,
+                        "size": 2048
+                    },
+                    {
+                        "name": "buf14d",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 6144,
+                        "size": 2048
+                    }
+                ]
+            },
+            "i1_po3": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf15",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 2048,
+                        "size": 2048
+                    },
+                    {
+                        "name": "buf15d",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 4096,
+                        "size": 2048
+                    }
+                ]
+            },
+            "i1_po4": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf16",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 6144,
+                        "size": 2048
+                    },
+                    {
+                        "name": "buf16d",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 2048,
+                        "size": 2048
+                    }
+                ]
+            },
+            "i2_pi0": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf12",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 5120,
+                        "size": 2048
+                    },
+                    {
+                        "name": "buf12d",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 0,
+                        "size": 2048
+                    }
+                ]
+            },
+            "i2_pi1": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf13",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 0,
+                        "size": 2048
+                    },
+                    {
+                        "name": "buf13d",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 2048,
+                        "size": 2048
+                    }
+                ]
+            },
+            "i2_pi2": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf14",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 2048,
+                        "size": 2048
+                    },
+                    {
+                        "name": "buf14d",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 6144,
+                        "size": 2048
+                    }
+                ]
+            },
+            "i2_pi3": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf15",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 2048,
+                        "size": 2048
+                    },
+                    {
+                        "name": "buf15d",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 4096,
+                        "size": 2048
+                    }
+                ]
+            },
+            "i2_pi4": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf16",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 6144,
+                        "size": 2048
+                    },
+                    {
+                        "name": "buf16d",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 2048,
+                        "size": 2048
+                    }
+                ]
+            },
+            "i2_po0": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf17",
+                        "fabric": "me",
+                        "row": 4,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf17d",
+                        "fabric": "me",
+                        "row": 4,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i3_po0": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf0",
+                        "fabric": "me",
+                        "row": 0,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf0d",
+                        "fabric": "me",
+                        "row": 0,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i4_po0": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf1",
+                        "fabric": "me",
+                        "row": 0,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf2",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 6,
+                        "bankId": 0,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf1d",
+                        "fabric": "me",
+                        "row": 0,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf2d",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 6,
+                        "bankId": 1,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i5_po0": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf3",
+                        "fabric": "me",
+                        "row": 1,
+                        "column": 8,
+                        "bankId": 2,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf4",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 4096,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf3d",
+                        "fabric": "me",
+                        "row": 1,
+                        "column": 8,
+                        "bankId": 1,
+                        "offset": 1024,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf4d",
+                        "fabric": "me",
+                        "row": 3,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 7168,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i6_po0": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf5",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 3,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf6",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 6,
+                        "bankId": 2,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf5d",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf6d",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 6,
+                        "bankId": 3,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i7_po0": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf7",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 1024,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf7d",
+                        "fabric": "me",
+                        "row": 2,
+                        "column": 7,
+                        "bankId": 2,
+                        "offset": 7168,
+                        "size": 1024
+                    }
+                ]
+            },
+            "i8_pi0": {
+                "bufferType": "mem",
+                "bufferInfo": [
+                    {
+                        "name": "buf17",
+                        "fabric": "me",
+                        "row": 4,
+                        "column": 7,
+                        "bankId": 0,
+                        "offset": 0,
+                        "size": 1024
+                    },
+                    {
+                        "name": "buf17d",
+                        "fabric": "me",
+                        "row": 4,
+                        "column": 7,
+                        "bankId": 1,
+                        "offset": 0,
+                        "size": 1024
+                    }
+                ]
+            }
+        },
+        "reservedMem": [
+            {
+                "name": "sysmem18",
+                "fabric": "me",
+                "row": 1,
+                "column": 8,
+                "bankId": 0,
+                "offset": 0,
+                "size": 2080,
+                "accessRow": 1,
+                "accessCol": 7,
+                "stackOffset": 32,
+                "stackSize": 1024,
+                "heapOffset": 1056,
+                "heapSize": 1024
+            },
+            {
+                "name": "sysmem19",
+                "fabric": "me",
+                "row": 1,
+                "column": 7,
+                "bankId": 0,
+                "offset": 6112,
+                "size": 2080,
+                "accessRow": 2,
+                "accessCol": 7,
+                "stackOffset": 6144,
+                "stackSize": 1024,
+                "heapOffset": 7168,
+                "heapSize": 1024
+            },
+            {
+                "name": "sysmem20",
+                "fabric": "me",
+                "row": 3,
+                "column": 8,
+                "bankId": 0,
+                "offset": 0,
+                "size": 2080,
+                "accessRow": 3,
+                "accessCol": 7,
+                "stackOffset": 32,
+                "stackSize": 1024,
+                "heapOffset": 1056,
+                "heapSize": 1024
+            }
+        ],
+        "topologyId": "VC1902.json"
+    }
+}
