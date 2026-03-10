@@ -1,7 +1,8 @@
 #pragma once
 #include <adf.h>
 #include <string>
-#include "ProcessGraph/StencilCoreGraph.h"
+#include "./ProcessUnit/include.h"
+#include "./ProcessGraph/StencilCoreGraph.h"
 
 using namespace adf;
 
@@ -29,16 +30,15 @@ public:
             base + graphID + "_outputaie0.txt"
         );
 
-        connect(in_plio[0].out[0], core.row0_lap);
-        connect(in_plio[1].out[0], core.row1_lap);
-        connect(in_plio[2].out[0], core.row2_lap);
-        connect(in_plio[3].out[0], core.row3_lap);
-        connect(in_plio[4].out[0], core.row4_lap);
+        connect<window<COL * NBYTES>>(in_plio[0].out[0], core.in[0]);
+        connect<window<COL * NBYTES>>(in_plio[1].out[0], core.in[1]);
+        connect<window<COL * NBYTES>>(in_plio[2].out[0], core.in[2]);
+        connect<window<COL * NBYTES>>(in_plio[3].out[0], core.in[3]);
+        connect<window<COL * NBYTES>>(in_plio[4].out[0], core.in[4]);
+        connect<window<COL * NBYTES>>(in_plio[5].out[0], core.in[5]);
+        connect<window<COL * NBYTES>>(in_plio[6].out[0], core.in[6]);
+        connect<window<COL * NBYTES>>(in_plio[7].out[0], core.in[7]);
 
-        connect(in_plio[5].out[0], core.row1_flux);
-        connect(in_plio[6].out[0], core.row2_flux);
-        connect(in_plio[7].out[0], core.row3_flux);
-
-        connect(core.out, out_plio.in[0]);
+        connect<window<COL * NBYTES>>(core.out, out_plio.in[0]);
     }
 };
