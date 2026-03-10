@@ -1,8 +1,0 @@
-{
-  "ActiveCores" : [
-    {"7_1": "/media/4T/home/xianyijiang/my_sparta/aie/./Work/aie/7_1"},
-    {"7_2": "/media/4T/home/xianyijiang/my_sparta/aie/./Work/aie/7_2"},
-    {"7_3": "/media/4T/home/xianyijiang/my_sparta/aie/./Work/aie/7_3"}
-  ],
-  "ActiveMemory" : ["6_2", "7_0", "7_1", "7_2", "7_3", "8_1", "8_3"]
-}
