@@ -1,18 +1,21 @@
 #pragma once
+
 #include <adf.h>
-#include <string>
 #include "./ProcessUnit/include.h"
 #include "./ProcessGraph/StencilCoreGraph.h"
 
-using namespace adf;
-
-class TopStencilGraph : public graph {
+class TopStencilGraph : public adf::graph {
 public:
     StencilCoreGraph core;
-    input_gmio  in_gmio[5];
-    output_gmio out_gmio;
 
-    TopStencilGraph(const std::string& graphID);
+    adf::input_gmio in0;
+    adf::input_gmio in1;
+    adf::input_gmio in2;
+    adf::input_gmio in3;
+    adf::input_gmio in4;
+    adf::output_gmio out0;
+
+    TopStencilGraph();
 };
 
 extern TopStencilGraph topStencil;

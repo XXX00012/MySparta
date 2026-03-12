@@ -1,38 +1,19 @@
 #include "TopGraph.h"
 
-TopStencilGraph::TopStencilGraph(const std::string& graphID) {
-    for (int i = 0; i < 5; ++i) {
-        in_gmio[i] = input_gmio::create(
-            graphID + "_gmio_in" + std::to_string(i),
-            64,
-            1000
-        );
-    }
+TopStencilGraph::TopStencilGraph()
+    : in0(adf::input_gmio::create("hdiff_in0", 64, 1000)),
+      in1(adf::input_gmio::create("hdiff_in1", 64, 1000)),
+      in2(adf::input_gmio::create("hdiff_in2", 64, 1000)),
+      in3(adf::input_gmio::create("hdiff_in3", 64, 1000)),
+      in4(adf::input_gmio::create("hdiff_in4", 64, 1000)),
+      out0(adf::output_gmio::create("hdiff_out0", 64, 1000)) {
+    adf::connect<adf::window<COL * NBYTES>>(in0.out[0], core.in[0]);
+    adf::connect<adf::window<COL * NBYTES>>(in1.out[0], core.in[1]);
+    adf::connect<adf::window<COL * NBYTES>>(in2.out[0], core.in[2]);
+    adf::connect<adf::window<COL * NBYTES>>(in3.out[0], core.in[3]);
+    adf::connect<adf::window<COL * NBYTES>>(in4.out[0], core.in[4]);
 
-    out_gmio = output_gmio::create(
-        graphID + "_gmio_out0",
-        64,
-        1000
-    );
-
-    connect<window<COL * NBYTES>>(in_gmio[0].out[0], core.in[0]);
-    connect<window<COL * NBYTES>>(in_gmio[1].out[0], core.in[1]);
-    connect<window<COL * NBYTES>>(in_gmio[2].out[0], core.in[2]);
-    connect<window<COL * NBYTES>>(in_gmio[3].out[0], core.in[3]);
-    connect<window<COL * NBYTES>>(in_gmio[4].out[0], core.in[4]);
-
-    connect<window<COL * NBYTES>>(core.out, out_gmio.in[0]);
+    adf::connect<adf::window<COL * NBYTES>>(core.out, out0.in[0]);
 }
 
-TopStencilGraph topStencil("hdiff");
-
-#ifndef __X86SIM__
-#ifndef __AIESIM__
-int main() {
-    topStencil.init();
-    topStencil.run(2);
-    topStencil.end();
-    return 0;
-}
-#endif
-#endif
+TopStencilGraph topStencil;
