@@ -4,6 +4,7 @@
 #include <adf/adf_api/XRTConfig.h>
 #include <experimental/xrt_device.h>
 #include <experimental/xrt_kernel.h>
+// ⚠️ 彻底删除了引发报错的 xrt_aie.h
 
 #include <chrono>
 #include <cstdint>
@@ -155,24 +156,75 @@ int main(int argc, char* argv[]) {
     zero_output(outbuf, out_elems);
     print_preview("input0 preview:", inbuf[0], PREVIEW);
 
+    // ==========================================
+    // 核心执行与性能测量区域 (2023.2 adf::event API)
+    // ==========================================
     topStencil.init();
 
+    // 补回丢失的起点 t0
     auto t0 = std::chrono::high_resolution_clock::now();
 
+    // 1) 先启动 graph
+    topStencil.run(iter_cnt);
+
+    // 2) 先挂输出
+    topStencil.out0.aie2gm_nb(outbuf, out_bytes);
+
+    // 3) 启动原生的 ADF event profiling 探针
+    adf::event::handle handle = adf::event::start_profiling(
+        topStencil.out0,
+        adf::event::io_stream_start_to_bytes_transferred_cycles,
+        static_cast<uint32_t>(out_bytes));
+
+    if (handle == adf::event::invalid_handle) {
+        std::fprintf(stderr,
+                     "[error] invalid profiling handle "
+                     "(likely no available performance counters on this interface tile)\n");
+        topStencil.end();
+        for (int i = 0; i < NUM_INPUTS; ++i) {
+            adf::GMIO::free(inbuf[i]);
+        }
+        adf::GMIO::free(outbuf);
+        xrtDeviceClose(dhdl);
+        return EXIT_FAILURE;
+    }
+
+    // 4) 再发 5 路输入，开始喂数据
     topStencil.in0.gm2aie_nb(inbuf[0], bytes_per_input);
     topStencil.in1.gm2aie_nb(inbuf[1], bytes_per_input);
     topStencil.in2.gm2aie_nb(inbuf[2], bytes_per_input);
     topStencil.in3.gm2aie_nb(inbuf[3], bytes_per_input);
     topStencil.in4.gm2aie_nb(inbuf[4], bytes_per_input);
-    topStencil.out0.aie2gm_nb(outbuf, out_bytes);
 
-    topStencil.run(iter_cnt);
-
+    // 5) 等待 DMA 传输和 Graph 计算彻底完成
     topStencil.out0.wait();
     topStencil.wait();
 
+    // 6) 读回精确的硬件时钟周期，并关闭探针
+    long long cycle_count = adf::event::read_profiling(handle);
+    adf::event::stop_profiling(handle);
+
+    // 7) 按照你 Makefile 里的 450 MHz 计算真实的吞吐量 (1 cycle = 1/450000000 秒)
+    const double freq_hz = 450000000.0;
+    const double time_seconds = static_cast<double>(cycle_count) / freq_hz;
+    
+    // 1 MB = 1024 * 1024 Bytes
+    const double output_MBps = static_cast<double>(out_bytes) / time_seconds / (1024.0 * 1024.0);
+    
+    const double gross_bytes = static_cast<double>(NUM_INPUTS) * static_cast<double>(bytes_per_input) +
+                               static_cast<double>(out_bytes);
+    const double gross_MBps = gross_bytes / time_seconds / (1024.0 * 1024.0);
+
+    std::printf("========================================\n");
+    std::printf("Event API cycles        : %lld\n", cycle_count);
+    std::printf("Output throughput       : %.3f MB/s\n", output_MBps);
+    std::printf("Gross graph throughput  : %.3f MB/s\n", gross_MBps);
+    std::printf("========================================\n");
+
+    // 记录软件秒表的终点 t1
     auto t1 = std::chrono::high_resolution_clock::now();
     topStencil.end();
+    // ==========================================
 
     const auto dur_us =
         std::chrono::duration_cast<std::chrono::microseconds>(t1 - t0).count();
@@ -188,4 +240,3 @@ int main(int argc, char* argv[]) {
     xrtDeviceClose(dhdl);
     return 0;
 }
-

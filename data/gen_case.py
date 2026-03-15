@@ -80,10 +80,6 @@ def make_input_rows(kind: str, rows: int, cols: int, seed: int,
 # ----------------------------
 
 class Win:
-    """
-    Simulate input_window_int32 / output_window_int32 with deterministic OOB behavior.
-    This is the '降智' part: all out-of-range reads are treated as 0 by default.
-    """
     def __init__(self, arr: np.ndarray, oob_mode: str = "zero"):
         self.arr = np.asarray(arr, dtype=np.int32).reshape(-1)
         self.pos = 0
@@ -133,14 +129,6 @@ def ext_w(buf16: np.ndarray, idx: int) -> np.ndarray:
 
 
 def concat(lower8: np.ndarray, upper8: np.ndarray) -> np.ndarray:
-    """
-    Build a 16-lane vector as [lower8 | upper8].
-    This matches the use pattern in flux2:
-      tmp1 = first read
-      tmp2 = second read
-      data_buf2 = concat(tmp2, tmp1)
-    to reconstruct original [low | high].
-    """
     return np.concatenate([
         np.asarray(lower8, dtype=np.int32),
         np.asarray(upper8, dtype=np.int32)
@@ -188,7 +176,6 @@ def hdiff_lap_kernel(row0: np.ndarray, row1: np.ndarray, row2: np.ndarray,
     data_buf1 = np.zeros(16, dtype=np.int32)
     data_buf2 = np.zeros(16, dtype=np.int32)
 
-    # preload from row3 and row1, same as kernel
     data_buf1 = upd_w(data_buf1, 0, row3_win.readincr_v8())
     data_buf1 = upd_w(data_buf1, 1, row3_win.read_v8())
 
@@ -201,7 +188,6 @@ def hdiff_lap_kernel(row0: np.ndarray, row1: np.ndarray, row2: np.ndarray,
     out_flux4 = []
 
     for _ in range(COL // 8):
-        # lap_ij and lap_ijm
         acc_0 = lmul8_sim(data_buf2, 2, coeffs_rest)
         acc_1 = lmul8_sim(data_buf2, 1, coeffs_rest)
 
@@ -224,7 +210,6 @@ def hdiff_lap_kernel(row0: np.ndarray, row1: np.ndarray, row2: np.ndarray,
         flux1 = to_i32(lap_ij.astype(np.int64) - lap_0.astype(np.int64))
         out_flux1.append(flux1)
 
-        # lap_ijp
         acc_0 = lmul8_sim(data_buf1, 3, coeffs_rest)
         acc_0 = lmsc8_sim(acc_0, data_buf2, 3, coeffs)
 
@@ -240,7 +225,6 @@ def hdiff_lap_kernel(row0: np.ndarray, row1: np.ndarray, row2: np.ndarray,
         flux2 = to_i32(lap_0.astype(np.int64) - lap_ij.astype(np.int64))
         out_flux2.append(flux2)
 
-        # lap_imj and lap_ipj
         acc_1 = lmul8_sim(data_buf2, 2, coeffs_rest)
         acc_0 = lmul8_sim(data_buf2, 2, coeffs_rest)
 
@@ -302,7 +286,6 @@ def hdiff_flux1_kernel(row1: np.ndarray, row2: np.ndarray, row3: np.ndarray,
     data_buf1 = np.zeros(16, dtype=np.int32)
     data_buf2 = np.zeros(16, dtype=np.int32)
 
-    # preload, same as kernel
     data_buf1 = upd_w(data_buf1, 0, row1_win.readincr_v8())
     data_buf1 = upd_w(data_buf1, 1, row1_win.read_v8())
 
@@ -343,15 +326,12 @@ def hdiff_flux1_kernel(row1: np.ndarray, row2: np.ndarray, row3: np.ndarray,
         inter4.append(flux_sub)
         inter4.append(to_i32(acc))
 
-        # reload next row1 pair
         data_buf1 = upd_w(data_buf1, 0, row1_win.readincr_v8())
         data_buf1 = upd_w(data_buf1, 1, row1_win.read_v8())
 
-        # exact write order from kernel
         inter5.append(ext_w(data_buf2, 1))
         inter5.append(ext_w(data_buf2, 0))
 
-        # reload next row2 pair
         data_buf2 = upd_w(data_buf2, 0, row2_win.readincr_v8())
         data_buf2 = upd_w(data_buf2, 1, row2_win.read_v8())
 
@@ -368,10 +348,6 @@ def hdiff_flux2_kernel(flux_inter1: np.ndarray, flux_inter2: np.ndarray,
                        flux_inter3: np.ndarray, flux_inter4: np.ndarray,
                        flux_inter5: np.ndarray,
                        oob_mode: str = "zero") -> np.ndarray:
-    """
-    Deliberately simplified to 8-lane semantics, because downstream only writes 8 lanes.
-    This is closer to what your current kernel actually materializes than the old scalar model.
-    """
     inter1_win = Win(flux_inter1, oob_mode)
     inter2_win = Win(flux_inter2, oob_mode)
     inter3_win = Win(flux_inter3, oob_mode)
@@ -408,7 +384,6 @@ def hdiff_flux2_kernel(flux_inter1: np.ndarray, flux_inter2: np.ndarray,
         tmp2 = inter5_win.readincr_v8()
         data_buf2 = concat(tmp2, tmp1)
 
-        # exact final pattern: -7 * flx_out4 + data_buf2[offset=2]
         final_out = (-7 * flx_out4.astype(np.int64) + data_buf2[2:10].astype(np.int64)).astype(np.int32)
         out.append(final_out)
 
@@ -440,30 +415,38 @@ def hdiff_one_window_exact(rows5: np.ndarray, oob_mode: str = "zero") -> np.ndar
     return out.astype(np.int32)
 
 
-def hdiff_two_windows_exact(rows6: np.ndarray, oob_mode: str = "zero") -> np.ndarray:
-    rows6 = np.asarray(rows6, dtype=np.int32)
-    if rows6.shape != (6, COL):
-        raise ValueError(f"rows6 must be shape (6, {COL}), got {rows6.shape}")
+def hdiff_multi_windows_exact(rows: np.ndarray, oob_mode: str = "zero") -> np.ndarray:
+    rows = np.asarray(rows, dtype=np.int32)
+    if rows.ndim != 2 or rows.shape[1] != COL:
+        raise ValueError(f"rows must be shape (N, {COL}), got {rows.shape}")
+    if rows.shape[0] < 5:
+        raise ValueError("need at least 5 input rows")
 
-    out0 = hdiff_one_window_exact(rows6[0:5], oob_mode=oob_mode)
-    out1 = hdiff_one_window_exact(rows6[1:6], oob_mode=oob_mode)
-    return np.stack([out0, out1], axis=0).astype(np.int32)
+    num_iter = rows.shape[0] - 4
+    outs = []
+    for i in range(num_iter):
+        outs.append(hdiff_one_window_exact(rows[i:i + 5], oob_mode=oob_mode))
+    return np.stack(outs, axis=0).astype(np.int32)
 
 
 # ----------------------------
 # AIE input packing
 # ----------------------------
 
-def dump_human_readable_inputs(rows6: np.ndarray, out_dir: Path, graph_id: str = "hdiff") -> None:
+def dump_human_readable_inputs(rows: np.ndarray, out_dir: Path, graph_id: str = "hdiff") -> None:
+    rows = np.asarray(rows, dtype=np.int32)
+    num_iter = rows.shape[0] - 4
     for i in range(5):
-        pair = np.stack([rows6[i], rows6[i + 1]], axis=0).astype(np.int32)
-        write_matrix_txt(out_dir / f"{graph_id}_in{i}.txt", pair)
+        mat = rows[i:i + num_iter].astype(np.int32)
+        write_matrix_txt(out_dir / f"{graph_id}_in{i}.txt", mat)
 
 
-def dump_aie_stream_inputs(rows6: np.ndarray, out_dir: Path, graph_id: str = "hdiff") -> None:
+def dump_aie_stream_inputs(rows: np.ndarray, out_dir: Path, graph_id: str = "hdiff") -> None:
+    rows = np.asarray(rows, dtype=np.int32)
+    num_iter = rows.shape[0] - 4
     for i in range(5):
-        pair = np.concatenate([rows6[i], rows6[i + 1]]).astype(np.int32)
-        write_stream_txt(out_dir / f"{graph_id}_in{i}_stream.txt", pair)
+        stream = rows[i:i + num_iter].reshape(-1).astype(np.int32)
+        write_stream_txt(out_dir / f"{graph_id}_in{i}_stream.txt", stream)
 
 
 # ----------------------------
@@ -474,10 +457,11 @@ def main() -> None:
     base_dir = Path(__file__).resolve().parent
 
     ap = argparse.ArgumentParser(
-        description="Generate AIE-style degraded golden output for current 256-wide lap/flux1/flux2 implementation."
+        description="Generate AIE-style golden/input streams for arbitrary iter count on current 256-wide lap/flux1/flux2 implementation."
     )
     ap.add_argument("--data-dir", type=Path, default=base_dir)
-    ap.add_argument("--rows", type=int, default=6)
+    ap.add_argument("--iter", type=int, default=32, dest="iter_cnt",
+                    help="number of output windows / host iter count")
     ap.add_argument("--cols", type=int, default=COL)
     ap.add_argument("--kind", choices=["zeros", "const", "ramp", "checker", "impulse", "random"], default="random")
     ap.add_argument("--seed", type=int, default=0)
@@ -488,17 +472,18 @@ def main() -> None:
     ap.add_argument("--oob-mode", choices=["zero", "clamp", "periodic"], default="zero")
     args = ap.parse_args()
 
-    if args.rows != 6:
-        raise ValueError("this validation flow is fixed to 6 input rows")
+    if args.iter_cnt <= 0:
+        raise ValueError("--iter must be positive")
     if args.cols != COL:
         raise ValueError(f"this flow expects cols={COL}")
 
     data_dir = args.data_dir
     data_dir.mkdir(parents=True, exist_ok=True)
 
-    rows6 = make_input_rows(
+    total_rows = args.iter_cnt + 4
+    rows = make_input_rows(
         kind=args.kind,
-        rows=6,
+        rows=total_rows,
         cols=COL,
         seed=args.seed,
         low=args.low,
@@ -509,31 +494,19 @@ def main() -> None:
     input_txt = data_dir / "input.txt"
     gold_txt = data_dir / "gold_out.txt"
 
-    write_matrix_txt(input_txt, rows6)
-    rows6_reload = read_matrix_txt(input_txt, rows=6, cols=COL)
+    write_matrix_txt(input_txt, rows)
+    rows_reload = read_matrix_txt(input_txt, rows=total_rows, cols=COL)
 
-    gold2 = hdiff_two_windows_exact(rows6_reload, oob_mode=args.oob_mode)
-    write_matrix_txt(gold_txt, gold2)
+    gold = hdiff_multi_windows_exact(rows_reload, oob_mode=args.oob_mode)
+    write_matrix_txt(gold_txt, gold)
 
-    dump_human_readable_inputs(rows6_reload, data_dir, graph_id=args.graph_id)
-    dump_aie_stream_inputs(rows6_reload, data_dir, graph_id=args.graph_id)
+    dump_human_readable_inputs(rows_reload, data_dir, graph_id=args.graph_id)
+    dump_aie_stream_inputs(rows_reload, data_dir, graph_id=args.graph_id)
 
-    print(f"[ok] wrote {input_txt} shape={rows6_reload.shape}")
-    print(f"[ok] wrote {gold_txt} shape={gold2.shape}")
-    print("[ok] wrote human-readable inputs : hdiff_in0.txt ~ hdiff_in4.txt (each is 2x256)")
-    print("[ok] wrote AIE stream inputs     : hdiff_in0_stream.txt ~ hdiff_in4_stream.txt (each is 512 scalars)")
-    print(f"[ok] oob mode = {args.oob_mode}")
-    print()
-    print("Sliding windows:")
-    print("  win0 = [row0 row1 row2 row3 row4] -> out0")
-    print("  win1 = [row1 row2 row3 row4 row5] -> out1")
-    print()
-    print("Port mapping:")
-    print("  in0 = [row0, row1]")
-    print("  in1 = [row1, row2]")
-    print("  in2 = [row2, row3]")
-    print("  in3 = [row3, row4]")
-    print("  in4 = [row4, row5]")
+    print(f"generated {args.iter_cnt} windows")
+    print(f"input rows   : {rows_reload.shape[0]} x {rows_reload.shape[1]}")
+    print(f"gold output  : {gold.shape[0]} x {gold.shape[1]}")
+    print(f"stream length: each is {args.iter_cnt * COL} scalars")
 
 
 if __name__ == "__main__":
