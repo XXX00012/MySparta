@@ -7,24 +7,21 @@ using namespace adf;
 
 #define kernel_load 14
 
-alignas(32) static const int32_t weights1[8] = {1, 1, 1, 1, 1, 1, 1, 1};
-alignas(32) static const int32_t flux_out[8] = {-7, -7, -7, -7, -7, -7, -7, -7};
-
 void hdiff_flux2(input_buffer<int32_t>& flux_inter1,
                  input_buffer<int32_t>& flux_inter2,
                  input_buffer<int32_t>& flux_inter3,
                  input_buffer<int32_t>& flux_inter4,
                  input_buffer<int32_t>& flux_inter5,
                  output_buffer<int32_t>& out) {
-  v8int32 coeffs1        = *(const v8int32*)weights1;
-  v8int32 flux_out_coeff = *(const v8int32*)flux_out;
 
-  auto* __restrict f1 = flux_inter1.data();
-  auto* __restrict f2 = flux_inter2.data();
-  auto* __restrict f3 = flux_inter3.data();
-  auto* __restrict f4 = flux_inter4.data();
-  auto* __restrict f5 = flux_inter5.data();
-  auto* __restrict o  = out.data();
+  alignas(32) int32_t weights1[8] = {1, 1, 1, 1, 1, 1, 1, 1};
+  alignas(32) int32_t flux_out_arr[8] = {-7, -7, -7, -7, -7, -7, -7, -7};
+
+  v8int32 coeffs1        = *(v8int32*)weights1;
+  v8int32 flux_out_coeff = *(v8int32*)flux_out_arr;
+
+  v8int32* ptr_in = nullptr;
+  v8int32* ptr_out = nullptr;
 
   for (unsigned i = 0; i < COL / 8; i++)
     chess_prepare_for_pipelining
@@ -33,8 +30,9 @@ void hdiff_flux2(input_buffer<int32_t>& flux_inter1,
       v8int32 flux_interm_sub;
 
       // inter1
-      flux_sub        = *(v8int32*)f1; f1 += 8;
-      flux_interm_sub = *(v8int32*)f1; f1 += 8;
+      ptr_in = (v8int32 *)flux_inter1.data() + (i * 2);
+      flux_sub        = *ptr_in++;
+      flux_interm_sub = *ptr_in;
 
       unsigned int flx_compare_imj =
           gt16(concat(flux_interm_sub, undef_v8int32()), 0, 0x76543210,
@@ -46,8 +44,9 @@ void hdiff_flux2(input_buffer<int32_t>& flux_inter1,
                    null_v16int32());
 
       // inter2
-      flux_sub        = *(v8int32*)f2; f2 += 8;
-      flux_interm_sub = *(v8int32*)f2; f2 += 8;
+      ptr_in = (v8int32 *)flux_inter2.data() + (i * 2);
+      flux_sub        = *ptr_in++;
+      flux_interm_sub = *ptr_in;
 
       unsigned int flx_compare_ij =
           gt16(concat(flux_interm_sub, undef_v8int32()), 0, 0x76543210,
@@ -61,8 +60,9 @@ void hdiff_flux2(input_buffer<int32_t>& flux_inter1,
       v16int32 flx_out2 = sub16(out_flx_inter2, out_flx_inter1);
 
       // inter3
-      flux_sub        = *(v8int32*)f3; f3 += 8;
-      flux_interm_sub = *(v8int32*)f3; f3 += 8;
+      ptr_in = (v8int32 *)flux_inter3.data() + (i * 2);
+      flux_sub        = *ptr_in++;
+      flux_interm_sub = *ptr_in;
 
       unsigned int fly_compare_ijm =
           gt16(concat(flux_interm_sub, undef_v8int32()), 0, 0x76543210,
@@ -76,8 +76,9 @@ void hdiff_flux2(input_buffer<int32_t>& flux_inter1,
       v16int32 flx_out3 = sub16(flx_out2, out_flx_inter3);
 
       // inter4
-      flux_sub        = *(v8int32*)f4; f4 += 8;
-      flux_interm_sub = *(v8int32*)f4; f4 += 8;
+      ptr_in = (v8int32 *)flux_inter4.data() + (i * 2);
+      flux_sub        = *ptr_in++;
+      flux_interm_sub = *ptr_in;
 
       unsigned int fly_compare_ij =
           gt16(concat(flux_interm_sub, undef_v8int32()), 0, 0x76543210,
@@ -91,8 +92,9 @@ void hdiff_flux2(input_buffer<int32_t>& flux_inter1,
       v16int32 flx_out4 = add16(flx_out3, out_flx_inter4);
 
       // inter5
-      v8int32 tmp1 = *(v8int32*)f5; f5 += 8;
-      v8int32 tmp2 = *(v8int32*)f5; f5 += 8;
+      ptr_in = (v8int32 *)flux_inter5.data() + (i * 2);
+      v8int32 tmp1 = *ptr_in++;
+      v8int32 tmp2 = *ptr_in;
       v16int32 data_buf2 = concat(tmp2, tmp1);
 
       v8acc80 final_output =
@@ -101,7 +103,7 @@ void hdiff_flux2(input_buffer<int32_t>& flux_inter1,
           lmac8(final_output, data_buf2, 2, 0x76543210,
                 concat(coeffs1, undef_v8int32()), 0, 0x76543210);
 
-      *(v8int32*)o = srs(final_output, 0);
-      o += 8;
+      ptr_out = (v8int32 *)out.data() + i;
+      *ptr_out = srs(final_output, 0);
     }
 }

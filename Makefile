@@ -150,9 +150,11 @@ $(XCLBIN):
 		--package.boot_mode=sd \
 		--package.kernel_image=${IMAGE} \
 		--package.defer_aie_run \
-		--package.sd_file $(HOST) $(XSA) $(GRAPH_O) -o $(XCLBIN) \
+		--package.sd_file $(HOST) \
+		--package.sd_file run.sh \
+		--package.sd_file xrt.ini \
 		--package.sd_dir ./data \
-		--package.sd_file run.sh
+		$(XSA) $(GRAPH_O) -o $(XCLBIN)
 	@echo "COMPLETE: emulation package created."
 
 ###################################################################################################

@@ -19,20 +19,13 @@ void hdiff_flux1(input_buffer<int32_t>& row1,
                  output_buffer<int32_t>& flux_inter3,
                  output_buffer<int32_t>& flux_inter4,
                  output_buffer<int32_t>& flux_inter5) {
-  auto* __restrict r1 = row1.data();
-  auto* __restrict r2 = row2.data();
-  auto* __restrict r3 = row3.data();
 
-  auto* __restrict f1 = flux_forward1.data();
-  auto* __restrict f2 = flux_forward2.data();
-  auto* __restrict f3 = flux_forward3.data();
-  auto* __restrict f4 = flux_forward4.data();
+  v8int32* __restrict row1_ptr = (v8int32 *)row1.data();
+  v8int32* __restrict row2_ptr = (v8int32 *)row2.data();
+  v8int32* __restrict row3_ptr = (v8int32 *)row3.data();
 
-  auto* __restrict o1 = flux_inter1.data();
-  auto* __restrict o2 = flux_inter2.data();
-  auto* __restrict o3 = flux_inter3.data();
-  auto* __restrict o4 = flux_inter4.data();
-  auto* __restrict o5 = flux_inter5.data();
+  v8int32* ptr_forward = nullptr;
+  v8int32* ptr_out = nullptr;
 
   v16int32 data_buf1 = null_v16int32();
   v16int32 data_buf2 = null_v16int32();
@@ -40,14 +33,12 @@ void hdiff_flux1(input_buffer<int32_t>& row1,
   v8acc80 acc_0 = null_v8acc80();
   v8acc80 acc_1 = null_v8acc80();
 
-  // preload
-  data_buf1 = upd_w(data_buf1, 0, *(v8int32*)r1);
-  r1 += 8;
-  data_buf1 = upd_w(data_buf1, 1, *(v8int32*)r1);
+  // Preload
+  data_buf1 = upd_w(data_buf1, 0, *row1_ptr++);
+  data_buf1 = upd_w(data_buf1, 1, *row1_ptr);
 
-  data_buf2 = upd_w(data_buf2, 0, *(v8int32*)r2);
-  r2 += 8;
-  data_buf2 = upd_w(data_buf2, 1, *(v8int32*)r2);
+  data_buf2 = upd_w(data_buf2, 0, *row2_ptr++);
+  data_buf2 = upd_w(data_buf2, 1, *row2_ptr);
 
   for (unsigned i = 0; i < COL / 8; i++)
     chess_prepare_for_pipelining
@@ -55,64 +46,67 @@ void hdiff_flux1(input_buffer<int32_t>& row1,
       v8int32 flux_sub;
 
       // flux_inter1
-      flux_sub = *(v8int32*)f1;
-      f1 += 8;
+      ptr_forward = (v8int32 *)flux_forward1.data() + i;
+      flux_sub = *ptr_forward;
+
       acc_1 = lmul8(data_buf2, 2, 0x76543210, flux_sub, 0, 0x00000000);
       acc_1 = lmsc8(acc_1, data_buf2, 1, 0x76543210, flux_sub, 0, 0x00000000);
-      *(v8int32*)o1 = flux_sub;
-      o1 += 8;
-      *(v8int32*)o1 = srs(acc_1, 0);
-      o1 += 8;
+
+      ptr_out = (v8int32 *)flux_inter1.data() + (i * 2);
+      *ptr_out++ = flux_sub;
+      *ptr_out = srs(acc_1, 0);
 
       // flux_inter2
-      flux_sub = *(v8int32*)f2;
-      f2 += 8;
+      ptr_forward = (v8int32 *)flux_forward2.data() + i;
+      flux_sub = *ptr_forward;
+
       acc_0 = lmul8(data_buf2, 3, 0x76543210, flux_sub, 0, 0x00000000);
       acc_0 = lmsc8(acc_0, data_buf2, 2, 0x76543210, flux_sub, 0, 0x00000000);
-      *(v8int32*)o2 = flux_sub;
-      o2 += 8;
-      *(v8int32*)o2 = srs(acc_0, 0);
-      o2 += 8;
+
+      ptr_out = (v8int32 *)flux_inter2.data() + (i * 2);
+      *ptr_out++ = flux_sub;
+      *ptr_out = srs(acc_0, 0);
 
       // flux_inter3
-      flux_sub = *(v8int32*)f3;
-      f3 += 8;
+      ptr_forward = (v8int32 *)flux_forward3.data() + i;
+      flux_sub = *ptr_forward;
+
       acc_1 = lmul8(data_buf2, 2, 0x76543210, flux_sub, 0, 0x00000000);
       acc_1 = lmsc8(acc_1, data_buf1, 2, 0x76543210, flux_sub, 0, 0x00000000);
-      *(v8int32*)o3 = flux_sub;
-      o3 += 8;
-      *(v8int32*)o3 = srs(acc_1, 0);
-      o3 += 8;
+
+      ptr_out = (v8int32 *)flux_inter3.data() + (i * 2);
+      *ptr_out++ = flux_sub;
+      *ptr_out = srs(acc_1, 0);
 
       // row3 pair for flux_inter4
-      data_buf1 = upd_w(data_buf1, 0, *(v8int32*)r3);
-      r3 += 8;
-      data_buf1 = upd_w(data_buf1, 1, *(v8int32*)r3);
+      row3_ptr = ((v8int32 *)(row3.data())) + i;
+      data_buf1 = upd_w(data_buf1, 0, *row3_ptr++);
+      data_buf1 = upd_w(data_buf1, 1, *row3_ptr);
 
       // flux_inter4
-      flux_sub = *(v8int32*)f4;
-      f4 += 8;
+      ptr_forward = (v8int32 *)flux_forward4.data() + i;
+      flux_sub = *ptr_forward;
+
       acc_1 = lmul8(data_buf1, 2, 0x76543210, flux_sub, 0, 0x00000000);
       acc_1 = lmsc8(acc_1, data_buf2, 2, 0x76543210, flux_sub, 0, 0x00000000);
-      *(v8int32*)o4 = flux_sub;
-      o4 += 8;
-      *(v8int32*)o4 = srs(acc_1, 0);
-      o4 += 8;
+
+      ptr_out = (v8int32 *)flux_inter4.data() + (i * 2);
+      *ptr_out++ = flux_sub;
+      *ptr_out = srs(acc_1, 0);
 
       // reload next row1 pair
-      data_buf1 = upd_w(data_buf1, 0, *(v8int32*)r1);
-      r1 += 8;
-      data_buf1 = upd_w(data_buf1, 1, *(v8int32*)r1);
+      row1_ptr = ((v8int32 *)(row1.data())) + i + 1;
+      data_buf1 = upd_w(data_buf1, 0, *row1_ptr++);
+      data_buf1 = upd_w(data_buf1, 1, *row1_ptr);
 
       // flux_inter5
-      *(v8int32*)o5 = ext_w(data_buf2, 1);
-      o5 += 8;
-      *(v8int32*)o5 = ext_w(data_buf2, 0);
-      o5 += 8;
+      ptr_out = (v8int32 *)flux_inter5.data() + (i * 2);
+      *ptr_out++ = ext_w(data_buf2, 1);
+      *ptr_out = ext_w(data_buf2, 0);
 
       // reload next row2 pair
-      data_buf2 = upd_w(data_buf2, 0, *(v8int32*)r2);
-      r2 += 8;
-      data_buf2 = upd_w(data_buf2, 1, *(v8int32*)r2);
+      row2_ptr = ((v8int32 *)(row2.data())) + i + 1;
+      data_buf2 = upd_w(data_buf2, 0, *row2_ptr++);
+      data_buf2 = upd_w(data_buf2, 1, *row2_ptr);
     }
 }
