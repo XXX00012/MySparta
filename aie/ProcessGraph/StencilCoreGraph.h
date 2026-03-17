@@ -14,6 +14,10 @@ public:
     kernel k_flux1;
     kernel k_flux2;
 
+    static constexpr int LAP_META_WORDS   = 4;   // lap start/end
+    static constexpr int INTER_META_WORDS = 8;   // lap + flux1
+    static constexpr int FINAL_META_WORDS = 12;  // lap + flux1 + flux2
+
     StencilCoreGraph() {
 #if defined(__AIESIM__) || defined(__X86SIM__) || defined(__ADF_FRONTEND__)
         k_lap   = kernel::create(hdiff_lap);
@@ -69,17 +73,17 @@ public:
         dimensions(k_flux1.in[2]) = {COL};
 
         for (int i = 0; i < 4; ++i) {
-            dimensions(k_lap.out[i])      = {COL};
-            dimensions(k_flux1.in[i + 3]) = {COL};
+            dimensions(k_lap.out[i])      = {COL + LAP_META_WORDS};
+            dimensions(k_flux1.in[i + 3]) = {COL + LAP_META_WORDS};
         }
 
         for (int i = 0; i < 5; ++i) {
-            dimensions(k_flux1.out[i]) = {2 * COL};
-            dimensions(k_flux2.in[i])  = {2 * COL};
+            dimensions(k_flux1.out[i]) = {2 * COL + INTER_META_WORDS};
+            dimensions(k_flux2.in[i])  = {2 * COL + INTER_META_WORDS};
         }
 
-        dimensions(k_flux2.out[0]) = {COL};
-        dimensions(out)            = {COL};
+        dimensions(k_flux2.out[0]) = {COL + FINAL_META_WORDS};
+        dimensions(out)            = {COL + FINAL_META_WORDS};
 #endif
     }
 };
